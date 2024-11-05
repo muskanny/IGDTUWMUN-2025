@@ -191,7 +191,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(1, 13, 36, 0.868)/*#213967*/;
+  background-color: #2e0000/*#213967*/;
   background-image: url(/assets/images/bg/contactBackground.png);
   padding: 50px 200px 50px 200px;
   color: white;
@@ -221,7 +221,7 @@
 
 .footer-right {
   text-align: center;
-  background-color: #28416fae;
+  background-color: #452121ae;
   padding: 10px 30px 10px 30px;
   border-radius: 20px;
 }
@@ -247,7 +247,7 @@
 
 .social-link:hover .social-icon {
   transform: scale(1.2);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(226, 150, 150, 0.3);
 }
 
 @media (max-width: 768px) {
