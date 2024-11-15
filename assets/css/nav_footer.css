@@ -7,7 +7,7 @@
 /* Nav Bar */
 .navbar {
   background-color: #370909; 
-  background-image: url(/assets/images/bg/contactBackground.png);
+  /* background-image: url(/assets/images/bg/contactBackground.png); */
   font-size: 1.5rem;
   overflow: hidden;
   display: flex;
@@ -191,8 +191,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #2e0000/*#213967*/;
-  background-image: url(/assets/images/bg/contactBackground.png);
+  background-color: #370909/*#213967*/;
+  /* background-image: url(/assets/images/bg/contactBackground.png); */
   padding: 50px 200px 50px 200px;
   color: white;
   height: 80px;
