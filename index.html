@@ -18,13 +18,15 @@
     <link rel="stylesheet" href="assets/css/nav_footer.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
     <link rel="stylesheet" href="./assets/css/club.css">
+    <link rel="stylesheet" href="./assets/css/count.css">
     <!-- <link rel="script" href="./assets/js/nav.js"/> -->
     <!--footer icon link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
   </head>
 
   <body>
-    <!-- Nav Bar  -->
+<!-- 
+    <!-- Nav Bar  
     <div class="navbar sidebarMenu" id="navbar">
       <div class="nav-left">
         <img
@@ -41,35 +43,67 @@
         <a href="./index.html" class="nav-link">Home</a>
         <a href="./pages/register.html" class="nav-link">Register here</a>
         <a href="./pages/committees.html" class="nav-link">Committees</a>
-        <!-- <a href="./pages/team.html" class="nav-link">Our Team</a> -->
         <a href="./pages/contact.html" class="nav-link">Contact us</a>
       </div>
       <div id="t1" class="hamburger">
         <span class="bar"><a href="./index.html">Home</a></span>
-        <!-- <span class="bar"><a href="./pages/about.html">About  Us</a></span> -->
         <span class="bar"><a href="./pages/committees.html">Committees</a></span>
-        <!-- <span class="bar"><a href="./pages/team.html">Our Team</a></span> -->
         <span class="bar"><a href="./pages/contact.html">Contact us</a></span>
         <span class="bar" onclick="closeMenu()"><a class="a1" style="color: brown;">CLOSE</a></span>
       </div>
     </div>
     
-    <!-- Nav Bar end -->
-    <!-- <main onclick="closeMenu()">
+    Nav Bar end -->
+
+    <nav class="nav">
+      <div class="container sidebarMenu">
+          <div class="logo">
+              <img class="logopic" src="assets\images\logo\logo_mun.png">
+              <a href="#">IGDTUWMUN'25</a>
+          </div>
+          <div id="mainListDiv" class="main_list">
+              <ul class="navlinks">
+                  <li><a href="./index.html">Home</a></li>
+                  <li><a href="./pages/register.html">Register Here</a></li>
+                  <li><a href="./pages/committees.html">Committees</a></li>
+                  <li><a href="./pages/contact.html">Contact us</a></li>
+              </ul>
+          </div>
+          <button class="btn" onclick="toggleMenu()">
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+          </button>
+          <section id="menuSection" class="hidden">
+            <ul class="menuList">
+                <li>Home</li>
+                <li>About</li>
+                <li>Services</li>
+                <li>Contact</li>
+            </ul>
+        </section>
+    </nav>
+
+
+    <div style="height: 10rem"></div>
+
+    <main onclick="closeMenu()">
       
       <div class="video-background">
         <video autoplay muted loop id="bgVideo">
-            <source src="./assets/video/aiclub.mp4" type="video/mp4">
+            <source src="assets\video\AAROHAN - cropped.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
         
-    </div> -->
+    </div>
     <hr width=100%>
       <!-- About  -->
        <!-- replace with vamikas about us section -->
       <section id="about-us" class="about-us-section">
         <div class="about-us-content">
-          <h2 class="sub-heading">About AI CLUB, IGDTUW</h2>
+          <h2 class="sub-heading">About IGDTUWMUN'25</h2>
           <br><br>
           <p>AI is an ever emerging aspect of technology. With the increasing advancements in hardware capabilities and new researches sprouting all over the world, it will not be long when machine learning and artificial intelligence would become an integral part in all pieces of technology as well as the scholastic curriculum.
           </p>
@@ -78,98 +112,241 @@
         </div>
       </section>
 
-      <!-- Faculty section -->
-      <hr width="100%">
-       <div class="faculty">        
-         <section class="testimonial-section">
-           <h2 class="testimonial-title">AI CLUB FACULTY</h2> <br>
-           <p class="testimonial-subtitle">Guiding the future of innovation and technology through collaborative exploration in AI.</p>
-           <div class="testimonial-slider">
-            <div class="testimonial-slide active">
-              <div class="testimonial-quote">
-                <div class="testimonial-content">
-                <span class="quote-mark">“</span>
-                <p>With a distinguished career spanning over decades in academia and administration, Professor Lather has consistently demonstrated exceptional leadership and a visionary approach to higher education. Her dedication to fostering innovation, promoting interdisciplinary research, and empowering young women in STEM fields aligns perfectly with the mission of IGDTUW.</p>
-                <span class="quote-mark">”</span>
-              </div>
-                    <div class="testimonial-author">
-                      <h3>Prof. Anu Singh</h3>
-                      <p>Honourable Vice Chancellor, Patron - AI CLUB</p>
-                    </div>
-                  </div>
-                  <div class="testimonial-image">
-                    <img src="assets\images\faculty\vc maam.png" alt="Saul Goodman">
-                  </div>
-                </div>
-                <div class="testimonial-slide">
-                  <div class="testimonial-quote">
-                    <div class="testimonial-content">
-                    <span class="quote-mark">“</span>
-                    <p>Prof. Arun Sharma is a revered academic at IGDTUW, with over two and a half decades of pedagogical expertise, complemented by a doctoral degree. His proficiency extends across the domains of Machine Learning, Data Science and Software Engineering, marked by a prodigious portfolio of 75+ scholarly publications and successful mentorship of 10 PhD scholars.</p>
-                    <span class="quote-mark">”</span>
-                  </div>
-                    <div class="testimonial-author">
-                      <h3>Dr. Arun Sharma</h3>
-                      <p>Faculty Coordinator - AI CLUB</p>
-                    </div>
-                  </div>
-                  <div class="testimonial-image">
-                    <img src="assets\images\faculty\arun sir.png" alt="Jena Karlis">
-                  </div>
-                </div>
-                <div class="testimonial-slide">
-                  <div class="testimonial-quote">
-                    <div class="testimonial-content">
-                      <span class="quote-mark">“</span>
-                      <p>Ritu Ma'am is a true luminary in her field, bringing a wealth of expertise and knowledge that goes far beyond the ordinary. Her remarkable guidance serves as a catalyst for innovation, lighting the way for aspiring students to soar to unprecedented heights. Her unwavering commitment to education remains an enduring source of inspiration, moulding the leaders of tomorrow.</p>
-                      <span class="quote-mark">”</span>
-                    </div>      
-                    <div class="testimonial-author">
-                      <h3>Dr. Ritu Rani</h3>
-                      <p>Faculty Coordinator - AI CLUB</p>
-                    </div>
-                  </div>
-                  <div class="testimonial-image">
-                    <img src="assets\images\faculty\ritu maam.png" alt="John Doe">
-                  </div>
-                </div>
-              </div>
-              <div class="testimonial-pagination">
-                <span class="pagination-dot active"></span>
-                <span class="pagination-dot"></span>
-                <span class="pagination-dot"></span>
-              </div>
-            </section>
-          </div>
-      <!-- Faculty section ends -->
 
-    <!--Footer section -->
-    <footer class="footer">
-      <div class="footer-left">
-          <img src="assets/images/logo/logo_white.png" alt="AI Club Logo" class="club-logo">
-          <div class="club-info">
-              <h3>AI CLUB</h3>
-              <p>Inspiring Innovation in the field of AI</p>
+      <div class="countdown-banner">
+        <h2>Countdown to the Conference</h2>
+        <div class="countdown-timer">
+          <span id="days"></span> Days
+          <span id="hours"></span> Hours
+          <span id="minutes"></span> Minutes
+          <span id="seconds"></span> Seconds
+        </div>
+      </div>   
+
+      <!-- Faculty section -->
+<hr width="100%">
+<div class="faculty">        
+  <section class="testimonial-section">
+    <h2 class="testimonial-title">Core Secretariat</h2> <br>
+    <p class="testimonial-subtitle">The guiding team shaping this wonderful conference.</p>
+
+    <!-- Left Arrow -->
+
+    <div class="testimonial-slider">
+      <!-- Testimonial slides -->
+      <div class="testimonial-slide active">
+        <div class="testimonial-quote">
+          <div class="testimonial-content">
+            <span class="quote-mark">“</span>
+            <p>With a distinguished career spanning over decades in academia and administration, Professor Lather has consistently demonstrated exceptional leadership and a visionary approach to higher education...</p>
+            <span class="quote-mark">”</span>
           </div>
-      </div>
-      <div class="footer-right">
-          <p>Connect with us on:</p>
-          <div class="social-icons">
-              <a href="https://www.instagram.com/aiclubigdtuw/" target="_blank" class="social-link">
-                  <img src="assets/images/logo/instagram-icon.png" alt="Instagram" class="social-icon">
-              </a>
-              <a href="https://www.linkedin.com/company/aiclubigdtuw/?originalSubdomain=in" target="_blank" class="social-link">
-                  <img src="assets/images/logo/linkedin_logo.png" alt="LinkedIn" class="social-icon">
-              </a>
-              <a href="https://x.com/aiclubigdtuw?lang=en" target="_blank" class="social-link">
-                  <img src="assets/images/logo/x-logo.png" alt="Twitter" class="social-icon">
-              </a>
+          <div class="testimonial-author">
+            <h3>Prof. Anu Singh</h3>
+            <p>Honourable Vice Chancellor, Patron - AI CLUB</p>
           </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/images/faculty/vc maam.png" alt="Prof. Anu Singh">
+        </div>
       </div>
-    </footer>
-    <!--Footer ends-->
+
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">
+          <div class="testimonial-content">
+            <span class="quote-mark">“</span>
+            <p>Prof. Arun Sharma is a revered academic at IGDTUW, with over two and a half decades of pedagogical expertise...</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-author">
+            <h3>Dr. Arun Sharma</h3>
+            <p>Faculty Coordinator - AI CLUB</p>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/images/faculty/arun sir.png" alt="Dr. Arun Sharma">
+        </div>
+      </div>
+
+      <!-- Additional 7 slides -->
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">
+          <div class="testimonial-content">
+            <span class="quote-mark">“</span>
+            <p>Ritu Ma'am is a true luminary in her field, bringing a wealth of expertise and knowledge that goes far beyond the ordinary...</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-author">
+            <h3>Dr. Ritu Rani</h3>
+            <p>Faculty Coordinator - AI CLUB</p>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/images/faculty/ritu maam.png" alt="Dr. Ritu Rani">
+        </div>
+      </div>
+
+      <!-- Repeat this structure for 6 more slides (4-9) -->
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">
+          <div class="testimonial-content">
+            <span class="quote-mark">“</span>
+            <p>Slide content for 4th slide here...</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-author">
+            <h3>Author 4</h3>
+            <p>Faculty Coordinator - AI CLUB</p>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/images/faculty/faculty4.png" alt="Author 4">
+        </div>
+      </div>
+
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">
+          <div class="testimonial-content">
+            <span class="quote-mark">“</span>
+            <p>Slide content for 4th slide here...</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-author">
+            <h3>Author 4</h3>
+            <p>Faculty Coordinator - AI CLUB</p>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/images/faculty/faculty4.png" alt="Author 4">
+        </div>
+      </div>
+
+
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">
+          <div class="testimonial-content">
+            <span class="quote-mark">“</span>
+            <p>Slide content for 4th slide here...</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-author">
+            <h3>Author 4</h3>
+            <p>Faculty Coordinator - AI CLUB</p>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/images/faculty/faculty4.png" alt="Author 4">
+        </div>
+      </div>
+
+
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">
+          <div class="testimonial-content">
+            <span class="quote-mark">“</span>
+            <p>Slide content for 4th slide here...</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-author">
+            <h3>Author 4</h3>
+            <p>Faculty Coordinator - AI CLUB</p>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/images/faculty/faculty4.png" alt="Author 4">
+        </div>
+      </div>
+
+
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">
+          <div class="testimonial-content">
+            <span class="quote-mark">“</span>
+            <p>Slide content for 4th slide here...</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-author">
+            <h3>Author 4</h3>
+            <p>Faculty Coordinator - AI CLUB</p>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/images/faculty/faculty4.png" alt="Author 4">
+        </div>
+      </div>
+
+
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">
+          <div class="testimonial-content">
+            <span class="quote-mark">“</span>
+            <p>Slide content for 4th slide here...</p>
+            <span class="quote-mark">”</span>
+          </div>
+          <div class="testimonial-author">
+            <h3>Author 4</h3>
+            <p>Faculty Coordinator - AI CLUB</p>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/images/faculty/faculty4.png" alt="Author 4">
+        </div>
+      </div>
+
+      <!-- Add remaining slides (5-9) following similar structure -->
+
+    </div>
+    <div class="testimonial-arrow">
+      <div class="left-arrow" onclick="prevSlide()">&#10094;</div>
+      <div class="testimonial-pagination">
+        <span class="pagination-dot active"></span>
+        <span class="pagination-dot"></span>
+        <span class="pagination-dot"></span>
+        <span class="pagination-dot"></span>
+        <span class="pagination-dot"></span>
+        <span class="pagination-dot"></span>
+        <span class="pagination-dot"></span>
+        <span class="pagination-dot"></span>
+        <span class="pagination-dot"></span>
+      </div>
+      <div class="right-arrow" onclick="nextSlide()">&#10095;</div>
+    </div>
+  </section>
+</div>
+<!-- Faculty section ends -->
+
+
+
+<footer>
+  <div class="footer_container">
+    <div class="logo"> <p>IGDTUWMUN'25</p></div>
+      <div class="social_media">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-instagram"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+      <p>Aarohan - The Literary Fest</p>
+    </div>
+</footer>
     <script src="./assets/js/script-index.js"></script>
     <script src="./assets/js/club.js"></script>
     <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/count.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
   </body>
 </html>

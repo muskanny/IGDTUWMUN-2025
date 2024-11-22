@@ -4,9 +4,9 @@
     display: flex;
     height: max-content;
     justify-content: center;
-    background-image: url(/assets/images/bg/newestBgLight.png);
+    /* background-image: url(/assets/images/bg/newestBgLight.png); */
     object-fit:cover ;
-    background-color: #795757;
+    background-color: #a57b7b;
     }
     
 .testimonial-section {   
@@ -23,6 +23,7 @@
     max-width: 900px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    background-color: #7e4b4b;
     /* background-image: url(images/newestBgLight.png); */
 }
 
@@ -146,4 +147,23 @@
     .testimonial-subtitle{
         display: none;
     }
+}
+
+.testimonial-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1rem;
+    color: white;
+    cursor: pointer;
+    font-size: 1.5rem;
+
+}
+
+.left-arrow .right-arrow :hover{
+    margin: 1rem;
+}
+
+.space{
+    width: 2rem;
 }
