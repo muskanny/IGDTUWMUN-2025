@@ -7,7 +7,7 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/logo/logo.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="../assets/css/commitees.css" />
+    <link rel="stylesheet" href="../assets/css/committees.css" />
     <link rel="stylesheet" href="../assets/css/index.css" />
     <link rel="stylesheet" href="../assets/css/nav_footer.css">  
     <!--footer icon link-->
@@ -16,120 +16,143 @@
 
 <body class="committee-page">
     <!-- Nav Bar  -->
-
     <script src="../assets/js/nav.js"></script>
     
-    <div class="navbar sidebarMenu" id="navbar">
-        <div class="nav-left">
-          <img
-            src="../assets/images/logo/logo_white.png"
-            style="filter: grayscale(50%)"
-            height="98"
-          />
-          IGDTUWMUN '25
-          <button class="btn" onclick="nav_toggle()">
-            <img class="ham-btn" src="../assets/images/logo/ham_btn_test_final.png" height="75px" width="70px">
-        </button>
-        </div>
-        <div class="nav-right">
-          <a href="../index.html">Home</a>
-          <a href="./pages/register.html" class="nav-link">Register here</a>
-          <!-- <a href="./about.html">About Us</a> -->
-          <a href="./committees.html">Committees</a>
-          <!-- <a href="./team.html">Our Team</a> -->
-          <a href="./contact.html">Contact us</a>
-        </div>
-        <div id="t1" class="hamburger">
-            <span class="bar"><a href="/index.html">Home</a></span>
-            <!-- <span class="bar"><a href="../pages/about.html">About  Us</a></span> -->
-            <span class="bar"><a href="../pages/committees.html">Committees</a></span>
-            <!-- <span class="bar"><a href="../pages/team.html">Our Team</a></span> -->
-            <span class="bar"><a href="../pages/contact.html">Contact us</a></span>
-            <span class="bar" onclick="closeMenu()"><a class="a1" style="color: brown;">CLOSE</a></span>
-        </div>    
-      </div>
-      <!-- Nav Bar end -->
+    <nav class="nav">
+        <div class="container sidebarMenu">
+            <div class="logo">
+                <img class="logopic" src="/assets/images/logo/logo_mun.png">
+                <a href="#">IGDTUWMUN'25</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="./register.html">Register Here</a></li>
+                    <li><a href="./committees.html">Committees</a></li>
+                    <li><a href="./contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <button class="btn" onclick="toggleMenu()">
+              <span class="navTrigger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+              </span>
+            </button>
+            <section id="menuSection" class="hidden">
+              <ul class="menuList">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Services</li>
+                  <li>Contact</li>
+              </ul>
+          </section>
+      </nav>
+  
+  
+      <div style="height: 10rem"></div>
+  
+      <main onclick="closeMenu()">
+        <!-- Nav Bar end -->
     
     <!-- Commitee cards -->
     <header class="banner">
-        <h1>Our Committee</h1>
+        <div class="bannerinner">
+            <h1>Our Committees</h1>
+        </div>
     </header>
 <div class="committee-wrap">
     <div class="committee-container">
-        <!-- Card Template -->
-    <a href="./committee1.html">
+    
+    <a href="./committees/unscw.html">
         <div class="card" data-name="c1">
             <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
             <div class="card-content">
-                <div class="card-title">Card 1</div>
-                <div class="card-subline">This is a subline</div>
+                <div class="card-title">UNCSW</div>
+                <div class="card-subline">United Nations Commission on the Status of Women</div>
+                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
      </a>
-        <!-- Repeat the card block for other cards -->
-    <a href="">
+    <a href="./committees/unga.html">
         <div class="card" data-name="c2">
             <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
             <div class="card-content">
-                <div class="card-title">Card 2</div>
-                <div class="card-subline">This is a subline</div>
+                <div class="card-title">UNGA-DISEC</div>
+                <div class="card-subline" >United Nations General Assembly, Disarmament & International Security</div>
+                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
     </a>
-    <a href="">
+    <a href="./committees/unhrc.html">
         <div class="card" data-name="c3">
             <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
             <div class="card-content">
-                <div class="card-title">Card 3</div>
-                <div class="card-subline">This is a subline</div>
+                <div class="card-title">UNHRC</div>
+                <div class="card-subline">United Nations Human Rights Council</div>
+                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
     </a>
-    <a href="">
+    <a href="./committees/aippm.html">
         <div class="card" data-name="c4">
             <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
             <div class="card-content">
-                <div class="card-title">Card 4</div>
-                <div class="card-subline">This is a subline</div>
+                <div class="card-title">AIPPM</div>
+                <div class="card-subline"> All India Political Parties Meet</div>
+                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
     </a>
-    <a href="">
+    <a href="./committees/unsc.html">
         <div class="card" data-name="c5">
             <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
             <div class="card-content">
-                <div class="card-title">Card 5</div>
-                <div class="card-subline">This is a subline</div>
+                <div class="card-title">UNSC</div>
+                <div class="card-subline">United Nations Security Council</div>
+                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
     </a>
-    <a href="">
+    <a href="./committees/ip.html">
         <div class="card" data-name="c6">
             <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
             <div class="card-content">
-                <div class="card-title">Card 6</div>
-                <div class="card-subline">This is a subline</div>
+                <div class="card-title">IP</div>
+                <div class="card-subline">International Press</div>
+                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
     </a>
     </div>
     </div>
-
+<script>
+    window.addEventListener("load", equalizeCardHeights);
+    window.addEventListener("resize", equalizeCardHeights);
+    
+    function equalizeCardHeights() {
+      const cards = document.querySelectorAll(".card");
+      let maxHeight = 0;
+    
+      cards.forEach(card => {
+        card.style.height = "auto";
+      });
+    
+      cards.forEach(card => {
+        const cardHeight = card.offsetHeight;
+        if (cardHeight > maxHeight) {
+          maxHeight = cardHeight;
+        }
+      });
+    
+      cards.forEach(card => {
+        card.style.height = `${maxHeight}px`;
+      });
+    }
+    </script>
 <!--Footer section -->
-<footer class="footer">
-    <div class="footer-left">
-        <img src="../assets/images/logo/logo_white.png" alt="AI Club Logo" class="club-logo">
-        <div class="club-info">
-            <h3>AI CLUB</h3>
-            <p>Inspiring Innovation in the field of AI</p>
-        </div>
-    </div>
-    </div>
-  </footer>
+
   <!--Footer ends-->
 </body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
-    <!-- <script src="../assets/js/events.js"></script>  -->
     <script src="../assets/js/nav.js"></script> 
 </html>

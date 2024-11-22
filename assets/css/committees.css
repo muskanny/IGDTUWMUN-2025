@@ -2,14 +2,46 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
 
 * {
-  font-family: "Poppins", sans-serif;
+  /* font-family: 'Baloo Bhai 2', sans-serif;
+   */
+  font-family: 'Poppins', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 .committee-page{
   background-color: #fff0d1;
+}
+.committee-page a{
+  text-decoration: none;
+  color: #1f1f1f;
+}
 
+.banner {
+  /* background-image: url('https://via.placeholder.com/1920x600');    */
+  background: #2d1506;
+  /* padding: 2rem; */
+  /* background-image: url('/assets/images/banner.jpg');  */
+  /* background: linear-gradient(beige, brown); */
+  background-size: cover;
+  background-position: center;
+  color: #341806;
+  text-align: center;
+  padding: 50px 20px;
+  margin-bottom: 2rem;
+}
+.committee-page .banner{
+  padding: 100px 20px;
+}
+.bannerinner {
+  display: inline-block; 
+  border: 6px solid #ffffff; 
+  padding: 30px 60px; 
+  text-align: center;
+}
+.banner h1 {
+  font-size: 4.5rem;
+  /* margin-bottom: 0.5rem; */
 }
 .committee-wrap {
   display: flex;
@@ -26,16 +58,17 @@
 
 .card {
   border: 1px solid #ddd;
-  border-radius: 8px;
-  width: 23vw;
+  border-radius: 2px;
+  width: 26vw;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2); 
 }
 
-.card:hover {
+/* .card:hover {
   transform: scale(1.01);
-}
+} */
 
 .card-image {
   width: 100%;
@@ -47,38 +80,70 @@
 
 .card-content {
   padding: 10px;
-  display: grid;
-  grid-template-rows: 3fr 2fr;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .card-title {
   font-weight: bold;
-  font-size: 1.2em;
+  padding-top: 1rem;
+  font-size: 2.5rem;
 }
 
 .card-subline {
+  font-family: "Quicksand", sans-serif;
   color: #777;
-  font-size: 0.9em;
-}
+  padding-top: 1.1rem;
+  font-size: 1.8rem;
+  line-height: 1.7rem;
 
-.committee-page a{
-  text-decoration: none;
-  color: #1f1f1f;
 }
-
-.committee-page .banner {
-  background-image: url('https://via.placeholder.com/1920x600'); /* Replace with your image URL */
-  background-size: cover;
-  background-position: center;
-  color: #2d1506;
+.committee-link {
+  display: flex;
+  align-items: center;
+  justify-self:end;
+}
+.committee-link button {
+  border-radius: 30px;
+  background-color: #341806;
+  border: none;
+  margin: auto;
+  margin-top: 1.7rem;
+  margin-bottom: 1rem;
+  color: #fff;
   text-align: center;
-  padding: 100px 20px;
-  margin-bottom: 2rem;
+  font-size: 1.7rem;
+  padding: 15px;
+  width: 50%;
+  transition: all 0.5s;
+  cursor: pointer;
 }
 
-.committee-page .banner h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.5rem;
+.committee-link button{
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.committee-link button:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;  
+  top: 14px;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.committee-link button:hover{
+  padding-right: 24px;
+  padding-left:8px;
+}
+
+.committee-link button:hover:after {
+  opacity: 1;
+  right: 10px;
 }
 
 /* Media Queries for Responsive Layouts */
@@ -114,13 +179,13 @@
 
 /* pages committee */
 
-.heading{
+/* .heading{
   text-align: center;
   font-size: 1.5rem;
   padding: 1.4rem;
   padding-top: 2rem;
   text-shadow: #ddd ;  
-}
+} */
 
 .agenda {
   padding: 20px;
@@ -130,14 +195,16 @@
 }
 
 .agenda h2 {
-  font-size: 1.8rem;
+  font-size: 2.7rem;
   margin-bottom: 10px;
   color: #333;
 }
 
 .agenda p {
+  font-family: "Quicksand", sans-serif;
   margin: 0 auto;
-  font-size: 1.2rem;
+  font-size: 2.2rem;
+  line-height: 2.4rem;
   color: #666;
 }
 

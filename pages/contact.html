@@ -31,36 +31,42 @@
 </head>
 <body>
   <!-- Nav Bar  -->
-  <div class="navbar sidebarMenu" id="navbar">
-    <div class="nav-left">
-      <img
-        src="../assets/images/logo/logo_white.png"
-        style="filter: grayscale(50%)"
-        height="98"
-      />
-      IGDTUWMUN 25'
-      <button class="btn" onclick="nav_toggle()">
-        <img class="ham-btn" src="../assets\images\logo\ham_btn_test_final.png" height="75px" width="70px">
-    </button>
-    </div>
-    <div class="nav-right">
-      <a href="../index.html">Home</a>
-      <a href="./pages/register.html" class="nav-link">Register here</a>
-      <!-- <a href="./about.html">About Us</a> -->
-      <a href="./committees.html">Committees</a>
-      <!-- <a href="./team.html">Our Team</a> -->
-      <a href="./contact.html">Contact us</a>
-    </div>
-    <div id="t1" class="hamburger">
-      <span class="bar"><a href="/index.html">Home</a></span>
-      <!-- <span class="bar"><a href="../pages/about.html">About  Us</a></span> -->
-      <span class="bar"><a href="../pages/events.html">Events</a></span>
-      <!-- <span class="bar"><a href="../pages/team.html">Our Team</a></span> -->
-      <span class="bar"><a href="../pages/contact.html">Contact us</a></span>
-      <span class="bar" onclick="closeMenu()"><a class="a1" style="color: brown;">CLOSE</a></span>
-    </div>
-  </div>
-  <!-- Nav Bar end -->
+  <nav class="nav">
+    <div class="container sidebarMenu">
+        <div class="logo">
+            <img class="logopic" src="/assets/images/logo/logo_mun.png">
+            <a href="#">IGDTUWMUN'25</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="./register.html">Register Here</a></li>
+                <li><a href="./committees.html">Committees</a></li>
+                <li><a href="./contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <button class="btn" onclick="toggleMenu()">
+          <span class="navTrigger">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+        </button>
+        <section id="menuSection" class="hidden">
+          <ul class="menuList">
+              <li>Home</li>
+              <li>About</li>
+              <li>Services</li>
+              <li>Contact</li>
+          </ul>
+      </section>
+  </nav>
+
+
+  <div style="height: 10rem"></div>
+
+  <main onclick="closeMenu()">
+<!-- Nav Bar end -->
 
   
 <main onclick="closeMenu()">

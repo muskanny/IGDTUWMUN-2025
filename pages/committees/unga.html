@@ -7,64 +7,59 @@
     <link rel="icon" type="image/x-icon" href="../assets/images/logo/logo.jpeg">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
-    <link rel="stylesheet" href="../assets/css/commitees.css" />
-    <link rel="stylesheet" href="../assets/css/index.css" />
-    <link rel="stylesheet" href="../assets/css/nav_footer.css">  
+    <link rel="stylesheet" href="/assets/css/committees.css" />
+    <link rel="stylesheet" href="/assets/css/index.css" />
+    <link rel="stylesheet" href="/assets/css/nav_footer.css">  
     <!--footer icon link-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Nav Bar  -->
+    <script src="/assets/js/nav.js"></script>
+    <nav class="nav">
+        <div class="container sidebarMenu">
+            <div class="logo">
+                <img class="logopic" src="/assets/images/logo/logo_mun.png">
+                <a href="#">IGDTUWMUN'25</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/register.html">Register Here</a></li>
+                    <li><a href="/pages/committees.html">Committees</a></li>
+                    <li><a href="/pages/contact.html">Contact us</a></li>
+                </ul>
+            </div>
+            <button class="btn" onclick="toggleMenu()">
+              <span class="navTrigger">
+                  <i></i>
+                  <i></i>
+                  <i></i>
+              </span>
+            </button>
+            <section id="menuSection" class="hidden">
+              <ul class="menuList">
+                  <li>Home</li>
+                  <li>About</li>
+                  <li>Services</li>
+                  <li>Contact</li>
+              </ul>
+          </section>
+      </nav>
+      <div style="height: 10rem"></div>
+  
+      <main onclick="closeMenu()">
+  <!-- Nav Bar end -->
 
-    <script src="../assets/js/nav.js"></script>
-    
-    <div class="navbar sidebarMenu" id="navbar">
-        <div class="nav-left">
-          <img
-            src="../assets/images/logo/logo_white.png"
-            style="filter: grayscale(50%)"
-            height="98"
-          />
-          IGDTUWMUN '25
-          <button class="btn" onclick="nav_toggle()">
-            <img class="ham-btn" src="../assets/images/logo/ham_btn_test_final.png" height="75px" width="70px">
-        </button>
+    <header class="banner">
+        <div class="bannerinner">
+            <h1>AIPPM</h1>
         </div>
-        <div class="nav-right">
-          <a href="../index.html">Home</a>
-          <a href="./pages/register.html" class="nav-link">Register here</a>
-          <!-- <a href="./about.html">About Us</a> -->
-          <a href="./committees.html">Committees</a>
-          <!-- <a href="./team.html">Our Team</a> -->
-          <a href="./contact.html">Contact us</a>
-        </div>
-        <div id="t1" class="hamburger">
-            <span class="bar"><a href="/index.html">Home</a></span>
-            <!-- <span class="bar"><a href="../pages/about.html">About  Us</a></span> -->
-            <span class="bar"><a href="../pages/committees.html">Committees</a></span>
-            <!-- <span class="bar"><a href="../pages/team.html">Our Team</a></span> -->
-            <span class="bar"><a href="../pages/contact.html">Contact us</a></span>
-            <span class="bar" onclick="closeMenu()"><a class="a1" style="color: brown;">CLOSE</a></span>
-        </div>    
-      </div>
-      <!-- Nav Bar end -->
-
-      <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Committee Page</title>
-    <link rel="stylesheet" href="/assets/css/commitees.css">
-</head>
-
-    <header class="heading">
-        <h1>Committee 1</h1>
     </header>
-    <section class="agenda">
+        <section class="agenda">
         <h2>The Agenda</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem voluptates pariatur sunt, vel, fugiat aperiam excepturi rerum distinctio optio, minus nesciunt illum! Odio porro in voluptatum!
+        <p>Allegations of Central agency abuse under the current central government
         </p></section>
 
     <section class="executive-board">
