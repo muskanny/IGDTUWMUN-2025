@@ -2,7 +2,7 @@
   --light-blue: #94b0c9;
   --dark-blue: #1c1678;
   --black-color: #795757;
-  --white-color: #fff0d1; /* Change the primary background color */
+  --white-color: #e2cfaa; /* Change the primary background color */
   --off-white-color: #f2f2f2;
   --off-blue-color: #daeaf9;
 }
@@ -26,6 +26,7 @@ body {
   background-color: #fff0d1; /* Updated background color for about us section */
   text-align: center;
   color: var(--black-color);
+  font-size: large
 }
 
 .video-background {
