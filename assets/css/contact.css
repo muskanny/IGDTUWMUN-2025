@@ -97,3 +97,71 @@ body {
 .contact-form button:hover {
   background-color:  #8a33f4; 
 }
+
+.common-paragraph {
+  color: #876969; 
+  font-size: 20px; 
+  line-height: 1.5; 
+  font-family: Arial, sans-serif; 
+  text-align: center; 
+  font-weight: bold; 
+}
+
+.common-heading {
+  color: #7b5e5e; 
+  font-size: 32px; 
+  line-height: 1.4; 
+  font-family: Arial, sans-serif; 
+  text-align: center; 
+  font-weight: bold; 
+}
+
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Spacing between the cards */
+  margin-top: 20px; /* Space above cards */
+}
+
+.card {
+  display: flex;
+  align-items: center;
+  width: 400px; 
+  height: 120px; 
+  padding: 20px; 
+  border: 1px solid #ccc; 
+  border-radius: 10px; 
+  background-color: #7e4b4b; 
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+}
+
+.card-image {
+  width: 80px; 
+  height: 80px; 
+  border-radius: 50%; 
+  object-fit: cover; 
+  margin-right: 20px; 
+}
+
+.card-text {
+  text-align: left;
+  margin-left: 100px;
+  color: rgb(230, 207, 203);
+}
+
+.card-name {
+  font-size: 1.4em; 
+  
+}
+
+.card-designation {
+  font-size: 1em;
+ 
+  margin-top: 5px;
+}
+
+.card-contact {
+  font-size: 1em;
+  
+  margin-top: 5px;
+}
