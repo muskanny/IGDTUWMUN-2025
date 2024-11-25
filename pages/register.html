@@ -5,8 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Register here!</title>
   <link rel="icon" type="image/x-icon" href="../assets/images/logo/logo.jpeg">
-  <link rel="stylesheet" href="../assets/css/contact.css">
   <link rel="stylesheet" href="../assets/css/nav_footer.css">
+  <link rel="stylesheet" href="../assets/css/contact.css">
+  
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link rel="stylesheet" href="../assets/css/index.css">
   <!--footer icon link-->
@@ -22,34 +23,33 @@
   <nav class="nav">
     <div class="container sidebarMenu">
         <div class="logo">
-            <img class="logopic" src="../assets/images/logo/logo_mun.png">
-            <a href="./index.html">IGDTUWMUN'25</a>
+            <img class="logopic" src="../assets/images\logo\logo_mun.png">
+            <a href="#">IGDTUWMUN'25</a>
         </div>
         <div id="mainListDiv" class="main_list">
             <ul class="navlinks">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="register.html">Register Here</a></li>
-                <li><a href="committees.html">Committees</a></li>
-                <li><a href="contact.html">Contact us</a></li>
+                <li><a href="../pages/register.html">Register Here</a></li>
+                <li><a href="../pages/committees.html">Committees</a></li>
+                <li><a href="../pages/contact.html">Contact us</a></li>
             </ul>
         </div>
-        <button class="btn" onclick="toggleMenu()">
-          <span class="navTrigger">
+        <!-- <button class="btn" onclick="toggleMenu()"> -->
+          <span class="navTrigger" onclick="toggleMenu()">
               <i></i>
               <i></i>
               <i></i>
           </span>
-        </button>
+        <!-- </button> -->
         <section id="menuSection" class="hidden">
           <ul class="menuList">
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
-              <li>Contact</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/register.html">Register Here</a></li>
+            <li><a href="../pages/committees.html">Committees</a></li>
+            <li><a href="../pages/contact.html">Contact us</a></li>
           </ul>
       </section>
   </nav>
-
 
   <!-- <div style="height: 10rem"></div> -->
 
@@ -100,5 +100,23 @@
   </footer>
   <!--Footer ends-->
   <script src="/assets/js/nav.js"></script>
+  <script src="./assets/js/script-index.js"></script>
+  <script src="./assets/js/club.js"></script>
+  <script src="./assets/js/nav.js"></script>
+  <script src="./assets/js/count.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="js/scripts.js"></script>
+  <!-- Function used to shrink nav bar removing paddings and adding black background -->
+
+  <script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
 </body>
 </html>
