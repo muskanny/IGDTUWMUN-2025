@@ -31,6 +31,7 @@ body {
 
 .video-background {
   background-color: #fff0d1; /* Background color behind the video if needed */
+  z-index: -1;
 }
 
 

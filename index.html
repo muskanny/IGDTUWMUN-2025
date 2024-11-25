@@ -15,8 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
     
     <!-- css files -->
-    <link rel="stylesheet" href="assets/css/nav_footer.css" />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/nav_footer.css" />
     <link rel="stylesheet" href="./assets/css/club.css">
     <link rel="stylesheet" href="./assets/css/count.css">
     <!-- <link rel="script" href="./assets/js/nav.js"/> -->
@@ -55,7 +55,7 @@
     
     Nav Bar end -->
 
-    <nav class="nav">
+    <nav class="nav" style="z-index: 100;">
       <div class="container sidebarMenu">
           <div class="logo">
               <img class="logopic" src="assets\images\logo\logo_mun.png">
@@ -63,10 +63,10 @@
           </div>
           <div id="mainListDiv" class="main_list">
               <ul class="navlinks">
-                  <li><a href="./index.html">Home</a></li>
-                  <li><a href="./pages/register.html">Register Here</a></li>
-                  <li><a href="./pages/committees.html">Committees</a></li>
-                  <li><a href="./pages/contact.html">Contact us</a></li>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="pages/register.html">Register Here</a></li>
+                  <li><a href="pages/committees.html">Committees</a></li>
+                  <li><a href="pages/contact.html">Contact us</a></li>
               </ul>
           </div>
           <!-- <button class="btn" onclick="toggleMenu()"> -->
@@ -76,20 +76,22 @@
                 <i></i>
             </span>
           <!-- </button> -->
+          
           <section id="menuSection" class="hidden">
             <ul class="menuList">
               <li><a href="./index.html">Home</a></li>
-              <li><a href="./pages/register.html">Register Here</a></li>
-              <li><a href="./pages/committees.html">Committees</a></li>
-              <li><a href="./pages/contact.html">Contact us</a></li>
+              <li><a href="pages/register.html">Register Here</a></li>
+              <li><a href="pages/committees.html">Committees</a></li>
+              <li><a href="pages/contact.html">Contact us</a></li>
             </ul>
-        </section>
+          </section>
+          
     </nav>
 
 
     <div style="height: 10rem"></div>
 
-    <main onclick="closeMenu()">
+    <!-- <main> -->
       
       <div class="video-background">
         <video autoplay muted loop id="bgVideo">
@@ -142,10 +144,10 @@
       <div class="testimonial-slide active">
         <div class="testimonial-quote">
           <div class="testimonial-content">
-            <span class="quote-mark">“</span>
+            <!-- <span class="quote-mark">“</span>
             <p>With a distinguished career spanning over decades in academia and administration, Professor Lather has consistently demonstrated exceptional leadership and a visionary approach to higher education...</p>
             <span class="quote-mark">”</span>
-          </div>
+          </div> -->
           <div class="testimonial-author">
             <h3>Prof. Anu Singh</h3>
             <p>Honourable Vice Chancellor, Patron - AI CLUB</p>
@@ -159,9 +161,9 @@
       <div class="testimonial-slide">
         <div class="testimonial-quote">
           <div class="testimonial-content">
-            <span class="quote-mark">“</span>
+            <!-- <span class="quote-mark">“</span>
             <p>Prof. Arun Sharma is a revered academic at IGDTUW, with over two and a half decades of pedagogical expertise...</p>
-            <span class="quote-mark">”</span>
+            <span class="quote-mark">”</span> -->
           </div>
           <div class="testimonial-author">
             <h3>Dr. Arun Sharma</h3>
@@ -177,9 +179,9 @@
       <div class="testimonial-slide">
         <div class="testimonial-quote">
           <div class="testimonial-content">
-            <span class="quote-mark">“</span>
+            <!-- <span class="quote-mark">“</span>
             <p>Ritu Ma'am is a true luminary in her field, bringing a wealth of expertise and knowledge that goes far beyond the ordinary...</p>
-            <span class="quote-mark">”</span>
+            <span class="quote-mark">”</span> -->
           </div>
           <div class="testimonial-author">
             <h3>Dr. Ritu Rani</h3>
@@ -195,9 +197,9 @@
       <div class="testimonial-slide">
         <div class="testimonial-quote">
           <div class="testimonial-content">
-            <span class="quote-mark">“</span>
+            <!-- <span class="quote-mark">“</span>
             <p>Slide content for 4th slide here...</p>
-            <span class="quote-mark">”</span>
+            <span class="quote-mark">”</span> -->
           </div>
           <div class="testimonial-author">
             <h3>Author 4</h3>
@@ -212,27 +214,9 @@
       <div class="testimonial-slide">
         <div class="testimonial-quote">
           <div class="testimonial-content">
-            <span class="quote-mark">“</span>
+            <!-- <span class="quote-mark">“</span>
             <p>Slide content for 4th slide here...</p>
-            <span class="quote-mark">”</span>
-          </div>
-          <div class="testimonial-author">
-            <h3>Author 4</h3>
-            <p>Faculty Coordinator - AI CLUB</p>
-          </div>
-        </div>
-        <div class="testimonial-image">
-          <img src="assets/images/faculty/faculty4.png" alt="Author 4">
-        </div>
-      </div>
-
-
-      <div class="testimonial-slide">
-        <div class="testimonial-quote">
-          <div class="testimonial-content">
-            <span class="quote-mark">“</span>
-            <p>Slide content for 4th slide here...</p>
-            <span class="quote-mark">”</span>
+            <span class="quote-mark">”</span> -->
           </div>
           <div class="testimonial-author">
             <h3>Author 4</h3>
@@ -248,9 +232,9 @@
       <div class="testimonial-slide">
         <div class="testimonial-quote">
           <div class="testimonial-content">
-            <span class="quote-mark">“</span>
+            <!-- <span class="quote-mark">“</span>
             <p>Slide content for 4th slide here...</p>
-            <span class="quote-mark">”</span>
+            <span class="quote-mark">”</span> -->
           </div>
           <div class="testimonial-author">
             <h3>Author 4</h3>
@@ -266,9 +250,9 @@
       <div class="testimonial-slide">
         <div class="testimonial-quote">
           <div class="testimonial-content">
-            <span class="quote-mark">“</span>
+            <!-- <span class="quote-mark">“</span>
             <p>Slide content for 4th slide here...</p>
-            <span class="quote-mark">”</span>
+            <span class="quote-mark">”</span> -->
           </div>
           <div class="testimonial-author">
             <h3>Author 4</h3>
@@ -284,9 +268,27 @@
       <div class="testimonial-slide">
         <div class="testimonial-quote">
           <div class="testimonial-content">
-            <span class="quote-mark">“</span>
+            <!-- <span class="quote-mark">“</span>
             <p>Slide content for 4th slide here...</p>
-            <span class="quote-mark">”</span>
+            <span class="quote-mark">”</span> -->
+          </div>
+          <div class="testimonial-author">
+            <h3>Author 4</h3>
+            <p>Faculty Coordinator - AI CLUB</p>
+          </div>
+        </div>
+        <div class="testimonial-image">
+          <img src="assets/images/faculty/faculty4.png" alt="Author 4">
+        </div>
+      </div>
+
+
+      <div class="testimonial-slide">
+        <div class="testimonial-quote">
+          <div class="testimonial-content">
+            <!-- <span class="quote-mark">“</span>
+            <p>Slide content for 4th slide here...</p>
+            <span class="quote-mark">”</span> -->
           </div>
           <div class="testimonial-author">
             <h3>Author 4</h3>
@@ -326,10 +328,8 @@
   <div class="footer_container">
     <div class="logo"> <p>IGDTUWMUN'25</p></div>
       <div class="social_media">
-        <a href="#"><i class="fab fa-facebook-f"></i></a>
         <a href="#"><i class="fab fa-twitter"></i></a>
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
+        <a href="https://www.instagram.com/igdtuwmun_/"><i class="fab fa-instagram"></i></a>
         <a href="#"><i class="fab fa-linkedin-in"></i></a>
       </div>
       <p>Aarohan - The Literary Fest</p>

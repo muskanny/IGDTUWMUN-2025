@@ -138,9 +138,6 @@ body {
 }
 
 
-/* Animation */
-/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
-
 .navTrigger {
     cursor: pointer;
     width: 30px;
@@ -332,14 +329,9 @@ body {
 
 .affix {
     padding: 0;
-    background-color: #fc9963;
+    background-color: #aa7f68c1;
     color: white;
 }
-
-
-
-
-
 
 .myH2 {
 	text-align:center;
@@ -385,6 +377,7 @@ footer{
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap-reverse;
+  align-items: center;
 }
 
 .logo{
@@ -427,8 +420,8 @@ h1{
   display: flex;
   flex-direction: column;
   background-color: #111;
-  position: absolute;
-  top: 65px; /* Align below navbar */
+  /* position: absolute; */
+  /* top: 65px; Align below navbar */
   width: 100%;
   z-index: 10;
 }
@@ -436,9 +429,11 @@ h1{
 /* New Section Styles */
 #menuSection {
   display: none;
-  background-color: #111;
-  padding: 1rem;
+  background-color: #d4caa0;
+  padding: 0.1rem;
   text-align: center;
+  transition: max-height 0.3s ease-in-out; /* Smooth toggle effect */
+  overflow: hidden; 
 }
 
 #menuSection ul {
@@ -448,7 +443,7 @@ h1{
 }
 
 #menuSection ul li {
-  padding: 1rem 0;
+  padding: 0rem 0;
   color: white;
   font-size: 18px;
   border-bottom: 1px solid gray;
