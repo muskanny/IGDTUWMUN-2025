@@ -21,6 +21,7 @@ body {
 
 .contact-container {
   background-color: rgb(237, 176, 153); 
+  /* background-color: #2d1506; */
   padding: 150px;
   border-radius: 8px;
   width: 150vw;

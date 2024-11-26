@@ -10,7 +10,9 @@
   padding: 0;
 }
 .committee-page{
-  background-color: #fff0d1;
+  background-color: #ecdab6;
+  /* background-color: #dcceb1; */
+  /* background-color: #fff0d1; storing colours*/
 }
 .committee-page a{
   text-decoration: none;
@@ -57,7 +59,8 @@
 }
 
 .card {
-  border: 1px solid #ddd;
+  /* border: 1px solid #ddd; */
+  /* background-color: #fff0d1; */
   border-radius: 2px;
   width: 26vw;
   overflow: hidden;
@@ -104,6 +107,7 @@
   align-items: center;
   justify-self:end;
 }
+
 .committee-link button {
   border-radius: 30px;
   background-color: #341806;
@@ -115,7 +119,6 @@
   text-align: center;
   font-size: 1.7rem;
   padding: 15px;
-  width: 50%;
   transition: all 0.5s;
   cursor: pointer;
 }
@@ -146,7 +149,7 @@
   right: 10px;
 }
 
-/* Media Queries for Responsive Layouts */
+/* Media Queries*/
 @media (max-width: 1024px) {
   .committee-container {
       grid-template-columns: repeat(2, 1fr); 
@@ -179,14 +182,6 @@
 
 /* pages committee */
 
-/* .heading{
-  text-align: center;
-  font-size: 1.5rem;
-  padding: 1.4rem;
-  padding-top: 2rem;
-  text-shadow: #ddd ;  
-} */
-
 .agenda {
   padding: 20px;
   max-width: 70vw;
@@ -194,18 +189,11 @@
   /* text-align: center; */
 }
 
-.agenda h2 {
-  font-size: 2.7rem;
-  margin-bottom: 10px;
-  color: #333;
-}
-
 .agenda p {
-  font-family: "Quicksand", sans-serif;
   margin: 0 auto;
   font-size: 2.2rem;
   line-height: 2.4rem;
-  color: #666;
+  color: #191919;
 }
 
 .executive-board {
@@ -214,7 +202,7 @@
 }
 
 .executive-board h2 {
-  font-size: 2rem;
+  font-size: 2.7rem;
   margin-bottom: 20px;
   color: #333;
 }
@@ -247,12 +235,12 @@
 }
 
 .member-card h3 {
-  font-size: 1.2rem;
+  font-size: 2.2rem;
   margin-bottom: 5px;
 }
 
 .member-card p {
-  font-size: 1rem;
+  font-size: 1.7rem;
   color: #777;
 }
 

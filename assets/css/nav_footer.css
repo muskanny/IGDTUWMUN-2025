@@ -329,7 +329,8 @@ body {
 
 .affix {
     padding: 0;
-    background-color: #aa7f68c1;
+    /* background-color: #fc9963; */
+    background-color: #fff0d1;
     color: white;
 }
 
@@ -365,7 +366,7 @@ body{
 }
 
 footer{
-  background: #452121ae;
+  background: #fff0d1;
   padding: 20px 0;
 }
 
@@ -391,7 +392,7 @@ footer{
 }
 
 .social_media a{
-  color: white;
+  color: #111;
   font-size: 24px;
   text-decoration: none;
   transition: .6s;

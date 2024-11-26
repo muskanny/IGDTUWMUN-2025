@@ -71,29 +71,19 @@
             <div class="card-content">
                 <div class="card-title">UNCSW</div>
                 <div class="card-subline">United Nations Commission on the Status of Women</div>
-                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
+        <!-- <div class="committee-link"><button><span>Know More!</span></button></div> -->
      </a>
-    <a href="./committees/unga.html">
-        <div class="card" data-name="c2">
-            <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
-            <div class="card-content">
-                <div class="card-title">UNGA-DISEC</div>
-                <div class="card-subline" >United Nations General Assembly, Disarmament & International Security</div>
-                <div class="committee-link"><button><span>Know More!</span></button></div>
-            </div>
-        </div>
-    </a>
-    <a href="./committees/unhrc.html">
-        <div class="card" data-name="c3">
+     <a href="./committees/unhrc.html">
+         <div class="card" data-name="c3">
             <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
             <div class="card-content">
                 <div class="card-title">UNHRC</div>
                 <div class="card-subline">United Nations Human Rights Council</div>
-                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
+        <!-- <div class="committee-link"><button><span>Know More!</span></button></div> -->
     </a>
     <a href="./committees/aippm.html">
         <div class="card" data-name="c4">
@@ -101,9 +91,9 @@
             <div class="card-content">
                 <div class="card-title">AIPPM</div>
                 <div class="card-subline"> All India Political Parties Meet</div>
-                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
+        <!-- <div class="committee-link"><button><span>Know More!</span></button></div> -->
     </a>
     <a href="./committees/unsc.html">
         <div class="card" data-name="c5">
@@ -111,9 +101,9 @@
             <div class="card-content">
                 <div class="card-title">UNSC</div>
                 <div class="card-subline">United Nations Security Council</div>
-                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
+        <!-- <div class="committee-link"><button><span>Know More!</span></button></div> -->
     </a>
     <a href="./committees/ip.html">
         <div class="card" data-name="c6">
@@ -121,11 +111,21 @@
             <div class="card-content">
                 <div class="card-title">IP</div>
                 <div class="card-subline">International Press</div>
-                <div class="committee-link"><button><span>Know More!</span></button></div>
             </div>
         </div>
+        <!-- <div class="committee-link"><button><span>Know More!</span></button></div> -->
     </a>
-    </div>
+    <a href="./committees/unga.html">
+        <div class="card" data-name="c2">
+            <div class="card-image" style="background-image: url('https://via.placeholder.com/150');"></div>
+            <div class="card-content">
+                <div class="card-title">UNGA-DISEC</div>
+                <div class="card-subline" >United Nations General Assembly, Disarmament & International Security</div>
+            </div>
+        </div>
+        <!-- <div class="committee-link"><button><span>Know More!</span></button></div> -->
+    </a>
+</div>
     </div>
 <script>
     window.addEventListener("load", equalizeCardHeights);
@@ -133,6 +133,7 @@
     
     function equalizeCardHeights() {
       const cards = document.querySelectorAll(".card");
+      const button = document.querySelectorAll(".committee-link");
       let maxHeight = 0;
     
       cards.forEach(card => {
@@ -149,11 +150,28 @@
       cards.forEach(card => {
         card.style.height = `${maxHeight}px`;
       });
+
+    //   button.forEach(btn=>{
+    //     btn.style.marginTop= `${maxHeight}px`;
+    //   })
+
     }
     </script>
 <!--Footer section -->
-
-  <!--Footer ends-->
+<footer>
+    <div class="footer_container">
+      <div class="logo"> <p>IGDTUWMUN'25</p></div>
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>Aarohan - The Literary Fest</p>
+      </div>
+  </footer>
+<!--Footer ends-->
 </body>
     <script src="../assets/js/nav.js"></script> 
 </html>
