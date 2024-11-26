@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900');
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
-
 * {
-  /* font-family: 'Baloo Bhai 2', sans-serif;
-   */
-  font-family: 'Poppins', sans-serif;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
@@ -56,17 +49,18 @@
   gap: 2rem;
   max-width: 90vw;
   margin: 1rem;
+  margin-bottom:5rem;
 }
 
 .card {
   /* border: 1px solid #ddd; */
-  background-color: #aa7f68c1; 
+  /* background-color: #aa7f68c1;  */
   border-radius: 2px;
   width: 26vw;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s;
-  box-shadow: 0 4px 4px rgba(48, 7, 7, 0.863); 
+  box-shadow: 0 4px 4px rgba(48, 7, 7, 0.263); 
 }
 
 /* .card:hover {
@@ -95,12 +89,12 @@
 }
 
 .card-subline {
-  font-family: "Quicksand", sans-serif;
-  color: #1f0202;
-  padding-top: 1.1rem;
+  /* font-family: "Quicksand", sans-serif; */
+  color: #262020;
+  padding-top: 1rem;
   font-size: 1.8rem;
-  line-height: 1.7rem;
-  font-weight: bold;
+  line-height: 1.5rem;
+  /* font-weight: bold; */
 
 }
 .committee-link {
