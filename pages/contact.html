@@ -129,10 +129,10 @@
     <!-- Right Section: Contact Form -->
     <div class="contact-right" style="flex:2; color:white;margin-left:100px;margin-right: 100px; padding:20px; display:flex; flex-direction:column; justify-content:center;">
       <p class="form-intro" style="color:aliceblue; font-size:18px; margin-bottom:15px;">We would love to hear from you!</p>
-      <input type="text" placeholder="Your Name" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px;">
-      <input type="email" placeholder="Your Email" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px;">
-      <textarea placeholder="Your Message" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px; height:100px;"></textarea>
-      <button type="submit" style="width:100%; padding:10px; background-color:#795757; color:white; font-size:16px; border:none; cursor:pointer;">
+      <input id="name" type="text" placeholder="Your Name" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px;">
+      <input id="email" type="email" placeholder="Your Email" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px;">
+      <textarea id="message" placeholder="Your Message" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px; height:100px;"></textarea>
+      <button id="sendButton" style="width:100%; padding:10px; background-color:#795757; color:white; font-size:16px; border:none; cursor:pointer;">
         Send Message
       </button>
     </div>
@@ -177,6 +177,24 @@
               $('.nav').removeClass('affix');
           }
       });
-  </script>
+      document.getElementById('sendButton').addEventListener('click', () => {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // Construct subject with name
+        const subject = `IGDTUW MUN Query from ${name}`;
+
+        // Construct body with email and message
+        const body = `${message}`;
+
+        // URL encode the subject and body
+        const gmailComposeURL = `https://mail.google.com/mail/?view=cm&fs=1&to=srishti.chugh23@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+        // Open Gmail compose in a new tab
+        window.open(gmailComposeURL, '_blank');
+      });
+
+    </script>
 </body>
 </html>
