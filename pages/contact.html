@@ -182,18 +182,24 @@
         const email = document.getElementById('email').value.trim();
         const message = document.getElementById('message').value.trim();
 
-        // Construct subject with name
+        // Construct subject and body
         const subject = `IGDTUW MUN Query from ${name}`;
-
-        // Construct body with email and message
         const body = `${message}`;
 
-        // URL encode the subject and body
-        const gmailComposeURL = `https://mail.google.com/mail/?view=cm&fs=1&to=muskan.s.del@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+        // Check if user is on a mobile device
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
-        // Open Gmail compose in a new tab
-        window.open(gmailComposeURL, '_blank');
+        if (isMobile) {
+          // Use mailto: for mobile devices
+          const mailtoURL = `mailto:srishti.chugh23@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          window.location.href = mailtoURL; // Redirect to default email client
+        } else {
+          // Use Gmail Compose URL for desktops
+          const gmailComposeURL = `https://mail.google.com/mail/?view=cm&fs=1&to=srishti.chugh23@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          window.open(gmailComposeURL, '_blank'); // Open Gmail compose in a new tab
+        }
       });
+
 
     </script>
 </body>
