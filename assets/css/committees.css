@@ -181,6 +181,7 @@
   padding: 20px;
   max-width: 70vw;
   margin: auto;
+  background-color: #5716054f;
   /* text-align: center; */
 }
 
@@ -189,6 +190,7 @@
   font-size: 2.2rem;
   line-height: 2.4rem;
   color: #191919;
+  
 }
 
 .executive-board {
