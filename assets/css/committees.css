@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-weight: 500;
 }
 .committee-page{
   background-color: #ecdab6;
@@ -46,26 +47,25 @@
 .committee-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 2rem;
+  gap: 3rem;
   max-width: 90vw;
-  margin: 1rem;
+  margin: 3rem;
   margin-bottom:5rem;
 }
 
 .card {
-  /* border: 1px solid #ddd; */
-  /* background-color: #aa7f68c1;  */
   border-radius: 2px;
-  width: 26vw;
+  width: 25vw;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s;
   box-shadow: 0 4px 4px rgba(48, 7, 7, 0.263); 
 }
 
-/* .card:hover {
-  transform: scale(1.01);
-} */
+.card:hover {
+  box-shadow: 0 4px 4px rgba(48, 7, 7, 0.663); 
+  border: #2d1506;
+}
 
 .card-image {
   width: 100%;
@@ -177,29 +177,43 @@
 
 /* pages committee */
 
+.agendabox{
+  border-radius: 8px;
+  background-color: #aa7f68c1;
+  max-width: 80vw;
+  margin: auto;
+  margin-top: 3rem;
+}
 .agenda {
-  padding: 20px;
+  /* background-color: #aa7f68c1; */
+  /* background-color: #681a064f; */
+  padding: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
   max-width: 70vw;
   margin: auto;
-  background-color: #5716054f;
-  /* text-align: center; */
+  text-align: justify;
+  margin-bottom: 3rem;
 }
 
 .agenda p {
   margin: 0 auto;
+  font-weight: 400;
   font-size: 2.2rem;
-  line-height: 2.4rem;
-  color: #191919;
-  
+  line-height: 2.6rem;
+  color: #2e1212;  
 }
 
 .executive-board {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
   padding: 20px;
   text-align: center;
 }
 
 .executive-board h2 {
-  font-size: 2.7rem;
+  font-size: 3.8rem;
+  font-weight: 500;
   margin-bottom: 20px;
   color: #333;
 }
@@ -240,6 +254,35 @@
   font-size: 1.7rem;
   color: #777;
 }
+.comingsoon{
+  font-size: 3rem;
+  font-style: italic;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 19ch;
+  border-right: 2px solid black; /* Cursor effect */
+  animation: typing 4s steps(21, end);
+}
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
+  to {
+      width: 20ch; 
+  }
+}
+@keyframes pulse {
+  0%, 100% {
+      transform: scale(1);
+      opacity: 1;
+  }
+  50% {
+      transform: scale(1.05); 
+      /* opacity: 0.8;  */
+  }
+}
 
 @media (max-width: 768px) {
   .banner h1 {
@@ -256,3 +299,12 @@
   }
 }
 
+@media (max-width:560px){
+  .banner{
+    margin-bottom: 0.5rem;
+  }
+  .agendabox{
+    max-width: 100vw;
+    margin-top: 0;
+  }
+}

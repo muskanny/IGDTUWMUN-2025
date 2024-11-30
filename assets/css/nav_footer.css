@@ -450,6 +450,14 @@ h1{
   border-bottom: 1px solid gray;
 }
 
+#menuSection ul li a {
+    padding: 0rem 0;
+    color: rgb(28, 22, 22);
+    font-size: 18px;
+    /* border-bottom: 1px solid gray; */
+    text-decoration: none;
+  }
+
 /* Show menu when visible */
 #menuSection.visible {
   display: block;
