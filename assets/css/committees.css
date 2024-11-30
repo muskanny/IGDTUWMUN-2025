@@ -254,6 +254,7 @@
   font-size: 1.7rem;
   color: #777;
 }
+
 .comingsoon{
   font-size: 3rem;
   font-style: italic;
@@ -306,5 +307,24 @@
   .agendabox{
     max-width: 100vw;
     margin-top: 0;
+  }
+.agenda {
+  padding: 1rem;
+  padding-left: 0.4rem;
+  padding-right: 0.4rem;
+  margin: auto;
+  text-align: left;
+  margin-bottom: 3rem;
+}
+.agenda p {
+  font-size: 2rem;
+  line-height: 2.4rem;
+}
+}
+@media (max-width:395px) {
+  .comingsoon{
+    font-size: 1.3rem;
+    max-width: 92vw;
+    animation: typing 4s steps(20, end);
   }
 }
