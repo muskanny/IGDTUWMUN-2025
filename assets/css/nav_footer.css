@@ -341,7 +341,7 @@ body {
     padding: 0;
     /* background-color: #fc9963; */
     background-color: #1d6a9e70;
-    color: rgb(211, 204, 204);
+    color: rgb(255, 255, 255);
 }
 
 .myH2 {
@@ -441,7 +441,7 @@ h1{
 /* New Section Styles */
 #menuSection {
   display: none;
-  background-color: #d4caa0;
+  background-color: #ffffff;
   padding: 0.1rem;
   text-align: center;
   transition: max-height 0.3s ease-in-out; /* Smooth toggle effect */
@@ -456,14 +456,14 @@ h1{
 
 #menuSection ul li {
   padding: 0rem 0;
-  color: white;
+  color: rgb(200, 227, 252);
   font-size: 18px;
   border-bottom: 1px solid gray;
 }
 
 #menuSection ul li a {
     padding: 0rem 0;
-    color: rgb(28, 22, 22);
+    color: rgb(22, 22, 28);
     font-size: 18px;
     /* border-bottom: 1px solid gray; */
     text-decoration: none;
