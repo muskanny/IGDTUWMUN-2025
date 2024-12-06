@@ -4,24 +4,24 @@
   font-weight: 500;
 }
 .committee-page{
-  background-color: #ecdab6;
+  background-color: #d7e9ed;
   /* background-color: #dcceb1; */
   /* background-color: #fff0d1; storing colours*/
 }
 .committee-page a{
   text-decoration: none;
-  color: #1f1f1f;
+  /* color: #1f1f1f; */
 }
 
 .banner {
   /* background-image: url('https://via.placeholder.com/1920x600');    */
-  background: #2d1506;
+  background: #201E43;
   /* padding: 2rem; */
   /* background-image: url('/assets/images/banner.jpg');  */
   /* background: linear-gradient(beige, brown); */
   background-size: cover;
   background-position: center;
-  color: #341806;
+  color: #000B58;
   text-align: center;
   padding: 50px 20px;
   margin-bottom: 2rem;
@@ -59,16 +59,18 @@
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s;
-  box-shadow: 0 4px 4px rgba(48, 7, 7, 0.263); 
+  box-shadow: 0 2px 2px #233030; 
+  color: #000B58;
 }
 
 .card:hover {
-  box-shadow: 0 4px 4px rgba(48, 7, 7, 0.663); 
+  box-shadow: 0 4px 4px #233030; 
   border: #2d1506;
 }
 
 .card-image {
   width: 100%;
+  background-image: url('https://via.placeholder.com/200');
   height: fit-content;
   padding-top: 100%; 
   background-size: cover;
@@ -179,7 +181,7 @@
 
 .agendabox{
   /* border-radius: 8px; */
-  background-color: #aa7f68c1;
+  background-color: #afc9c6;
   max-width: 80vw;
   margin: auto;
   margin-top: 3rem;
