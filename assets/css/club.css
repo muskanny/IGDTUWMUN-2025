@@ -62,14 +62,14 @@
 .testimonial-quote {
     text-align: left;
     position: relative;
-    padding-left: 20px;
+    padding-left: 10px;
     /* border-left: 3px solid #6440af; */
     border-left: 3px solid #14062d;
     max-width: 60%;
 }
 
 .quote-mark {
-    font-size: 40px;
+    font-size: 20px;
     color: #15062d;
     position: absolute;
     top: -10px;
@@ -86,14 +86,14 @@
 }
 
 .testimonial-author h3 {
-    font-size: 18px;
+    font-size: 15px;
     /* color: #c8abab; */
     color: #0c062d;
     margin: 16px 0 4px;
 }
 
 .testimonial-author p {
-    font-size: 14px;
+    font-size: 9.8px;
     /* color: #f8f8fa; */
     color: #0c062d;
     margin: 0;
@@ -107,7 +107,7 @@
 .testimonial-image img {
     width: 150px;
     height: 150px;
-    border-radius: 50%;
+    border-radius: 25%;
     object-fit: cover;
 }
 
