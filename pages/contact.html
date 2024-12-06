@@ -81,37 +81,60 @@
 
   
 <main onclick="closeMenu()">
-  <header class="banner">
-    <div class="bannerinner">
-        <h1>Contact Us</h1>
-    </div>
-</header>
   <div class="contact-main">
     <!-- Added Contact Us Intro Section -->
     <div class="contact-intro">
+      <h2 class="common-heading">GET IN TOUCH</h2>
       <p class="common-paragraph">
         Have any questions, suggestions, or inquiries? Reach out to us, and we’ll ensure to assist you at the earliest.<br>
-        Your feedback and participation mean the world to us! 
-        <!-- For website related feedback/queries contact the <a href="https://www.linkedin.com/in/muskan-singh-83828b239/">developer here.</a>  -->
+        Your feedback and participation mean the world to us! For website related feedback/queries contact the <a href="https://www.linkedin.com/in/muskan-singh-83828b239/">developer here.</a> 
       
       </p>
     </div>
     
+  <!-- Reach Us Section -->
+  <!-- <div class="contact-details" style="text-align: center; margin-top: 20px;">
+    <h3 class="common-heading">Reach us through</h3>
+    <div class="cards-container"> -->
+      <!-- Card 1 -->
+      <!-- <div class="card">
+        <img src="person1.jpg" alt="Person 1" class="card-image">
+        <div class="card-text">
+          <p class="card-name" style="color: rgb(230, 207, 203);"><strong>Archita</strong></p>
+          <p class="card-designation" style="color:#fff0d1;;">General Secretary IGDTUW MUN</p>
+          <p class="card-contact" style="color:#fff0d1">+91 97174 38922</p>
+        </div>
+      </div> -->
+  
+      <!-- Card 2 -->
+      <!-- <div class="card">
+        <img src="person2.jpg" alt="Person 2" class="card-image">
+        <div class="card-text">
+          <p class="card-name" style="color: rgb(230, 207, 203);"><strong>Muskan Singh</strong></p>
+          <p class="card-designation" style="color:#fff0d1">Technical head IGDTUW MUN website</p>
+          <p class="card-contact" style="color:#fff0d1">+91 81788 02888</p>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
   <!-- Contact Section -->
 <!-- <div class="contact-container" style="display: flex; width:100%; height: 500px; background-color: #f28d6573; padding: 20px; margin: 0 auto; border-radius: 12px;"> -->
-  <div class="contact-container">
+  <div class="contact-container" style="display:flex; width:80%;max-width: 1200px; height:500px; background-color:#94b0c9; border-radius:12px; overflow:hidden;padding: 0%;"> 
     <!-- Left Section: Image -->
-    <div class="contact-left">
-      <img src="../assets/images/bg/mun contact us_img.png" alt="Contact Us">
+    <div class="contact-left" style="flex:1; display:flex; align-items:center; justify-content:center; overflow:hidden;">
+      <img src="../assets/images/bg/mun contact us_img.png" alt="Contact Us" style="max-width:100%; height:auto; border-radius:8px;">
     </div>
   
     <!-- Right Section: Contact Form -->
-    <div class="contact-right">
-      <p class="form-intro">We would love to hear from you!</p>
-      <input id="name" type="text" placeholder="Your Name">
-      <input id="email" type="email" placeholder="Your Email">
-      <textarea id="message" placeholder="Your Message"></textarea>
-      <button id="sendButton">Send Message</button>
+    <div class="contact-right" style="flex:2; color:white;margin-left:100px;margin-right: 100px; padding:20px; display:flex; flex-direction:column; justify-content:center;">
+      <p class="form-intro" style="color:aliceblue; font-size:18px; margin-bottom:15px;">We would love to hear from you!</p>
+      <input id="name" type="text" placeholder="Your Name" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px;">
+      <input id="email" type="email" placeholder="Your Email" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px;">
+      <textarea id="message" placeholder="Your Message" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px; height:100px;"></textarea>
+      <button id="sendButton" style="width:100%; margin-bottom:15px; padding:10px; background-color:#0c0533; color:white; font-size:16px; border:none; cursor:pointer;">
+        Send Message
+      </button>
     </div>
   </div>
   

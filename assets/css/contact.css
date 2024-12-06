@@ -8,6 +8,7 @@ body {
   background-image: url(/assets/images/bg/newestBgLight.png);
   background: #ffffff;
   background-position: center;
+  /* padding: 2rem 0; */
   background-repeat: no-repeat;
 }
 
@@ -18,8 +19,9 @@ body {
   padding: 1.1rem 0;
 }
 
-/* .contact-container {
-  background-color: #2d3b48; 
+.contact-container {
+  background-color: #94b0c9; 
+  /* background-color: #2d1506; */
   padding: 150px;
   border-radius: 8px;
   width: 150vw;
@@ -27,104 +29,6 @@ body {
   text-align: center;
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3); 
   margin: 15px;
-} */
-/* Contact Container */
-.contact-container {
-  display: flex;
-  width: 80%;
-  max-width: 1200px;
-  height: 500px;
-  background-color: #508C9B;
-  border-radius: 12px;
-  overflow: hidden;
-  padding: 0;
-  margin: 2rem auto; /* Center the container on the page */
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Left Section: Image */
-.contact-left {
-  flex: 1;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.contact-left img {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-}
-
-.contact-right {
-  flex: 2;
-  color: white;
-  margin-left: 100px;
-  margin-right: 100px;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.form-intro {
-  color: aliceblue;
-  font-size: 18px;
-  margin-bottom: 15px;
-}
-
-input[type="text"],
-input[type="email"],
-textarea {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
-  font-size: 16px;
-}
-
-textarea {
-  height: 100px;
-}
-textarea:focus, input:focus {
-  outline: none;
-  border: 1.2px solid#121212;
-}
-
-#sendButton {
-  width: 100%;
-  margin-bottom: 15px;
-  padding: 10px;
-  background-color: #0c0533;
-  color: white;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-}
-
-.banner {
-  background: #201E43;
-  background-size: cover;
-  background-position: center;
-  color: #000B58;
-  text-align: center;
-  padding: 50px 20px;
-  margin-bottom: 2rem;
-}
-
-.committee-page .banner{
-  padding: 100px 20px;
-}
-
-.bannerinner {
-  display: inline-block; 
-  border: 6px solid #c8e1e9; 
-  padding: 30px 60px; 
-  text-align: center;
-}
-
-.banner h1 {
-  font-size: 4.5rem;
 }
 
 .header {
@@ -196,8 +100,7 @@ textarea:focus, input:focus {
 }
 
 .common-paragraph {
-  color: #264d57; 
-  font-style: italic;
+  color: #0c0533; 
   font-size: 20px; 
   line-height: 1.5; 
   font-family: Arial, sans-serif; 
