@@ -11,60 +11,90 @@
     <link rel="stylesheet" href="/assets/css/index.css" />
     <link rel="stylesheet" href="/assets/css/nav_footer.css">  
     <!--footer icon link-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>  
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!-- Nav Bar  -->
-    <script src="/assets/js/nav.js"></script>
-    <nav class="nav">
-        <div class="container sidebarMenu">
-            <div class="logo">
-                <img class="logopic" src="/assets/images/logo/logo_mun.png">
-                <a href="#">IGDTUWMUN'25</a>
-            </div>
-            <div id="mainListDiv" class="main_list">
-                <ul class="navlinks">
-                    <li><a href="/index.html">Home</a></li>
-                    <li><a href="/pages/register.html">Register Here</a></li>
-                    <li><a href="/pages/committees.html">Committees</a></li>
-                    <li><a href="/pages/contact.html">Contact us</a></li>
-                </ul>
-            </div>
-            <button class="btn" onclick="toggleMenu()">
-              <span class="navTrigger">
-                  <i></i>
-                  <i></i>
-                  <i></i>
-              </span>
-            </button>
-            <section id="menuSection" class="hidden">
-              <ul class="menuList">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Services</li>
-                  <li>Contact</li>
-              </ul>
-          </section>
-      </nav>
-      <div style="height: 10rem"></div>
-  
-      <main onclick="closeMenu()">
-  <!-- Nav Bar end -->
+ <nav class="nav">
+    <div class="container sidebarMenu">
+        <div class="logo">
+            <img class="logopic" src="/assets/images\logo\logo_mun.png">
+            <a href="#">IGDTUWMUN'25</a>
+        </div>
+        <div id="mainListDiv" class="main_list">
+            <ul class="navlinks">
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/register.html">Register Here</a></li>
+                <li><a href="/pages/committees.html">Committees</a></li>
+                <li><a href="/pages/contact.html">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- <button class="btn" onclick="toggleMenu()"> -->
+          <span class="navTrigger" onclick="toggleMenu()">
+              <i></i>
+              <i></i>
+              <i></i>
+          </span>
+        <!-- </button> -->
+        <section id="menuSection" class="hidden">
+          <ul class="menuList">
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/pages/register.html">Register Here</a></li>
+            <li><a href="/pages/committees.html">Committees</a></li>
+            <li><a href="/pages/contact.html">Contact us</a></li>
+          </ul>
+      </section>
+  </nav>
 
+
+  <div style="height: 10rem"></div>
+
+  <main onclick="closeMenu()">
     <header class="banner">
         <div class="bannerinner">
             <h1>AIPPM</h1>
         </div>
     </header>
+    <div class="agendabox">
         <section class="agenda">
-        <h2>All India Political Parties Meet (AIPPM)</h2>
-        <p>Allegations of Central agency abuse under the current central government
-        </p></section>
+            <p>AIPPM, referred to as “All India Political parties meet” is a platform fostering political dialogue among Indian political parties ,
+                formulating policies, and fostering consensus on matters of national importance. AIPPM helps in collaboration and bringing about
+                 oneness. The All India Political Parties Meet is where the heartbeat of Indian democracy thrives. Here, delegates delve into the
+                  nuances and intricacies of modern-day Indian politics. It helps participants grasp the multi-layered processes that go behind
+                   policy-making and governance in India, providing them with a hands-on approach to the impediments and challenges that confront
+                    political parties in modern times. It's a collision and blend of ideologies.
+
+    
+            </p>
+            <br>
+            <br>
+            <br> 
+            <p>The agenda of the  <b> All India Political Parties Meet (AIPPM)</b> 
+                is to discuss allegations of central agency abuse under the current central government.</p>
+            <br>
+            <br>
+            <p>
+            <b> About the agenda - </b> The alleged misuse of central agencies under the current government has sparked debates about political 
+            interference and erosion of institutional autonomy. These allegations raise concerns about the impartiality of agencies meant to
+             uphold the rule of law. Addressing this issue requires examining the balance between governance and political influence, ensuring 
+             that central institutions function transparently and free from partisan agendas to maintain democratic integrity.
+
+    
+    
+            </p>
+        </section>
+       
+    </div>
 
     <section class="executive-board">
         <h2>Executive Board</h2>
-        <div class="board-members">
+        <div class="comingsoon">
+            To be announced soon!
+        </div>
+        <!-- <div class="board-members">
             <div class="member-card">
                 <img src="https://via.placeholder.com/150" alt="Board Member">
                 <h3>Blake Lively</h3>
@@ -80,25 +110,44 @@
                 <h3>Hellooo</h3>
                 <p>Position</p>
             </div>
-        </div>
+        </div> -->
     </section>
-
+      </main>
 <!--Footer section -->
-<footer class="footer">
-    <div class="footer-left">
-        <img src="../assets/images/logo/logo_white.png" alt="AI Club Logo" class="club-logo">
-        <div class="club-info">
-            <h3>AI CLUB</h3>
-            <p>Inspiring Innovation in the field of AI</p>
+<footer>
+    <div class="footer_container">
+      <div class="logo"> <p>IGDTUWMUN'25</p></div>
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
-    </div>
-    </div>
+        <p>Aarohan - The Literary Fest</p>
+      </div>
   </footer>
   <!--Footer ends-->
+  <script src="../assets/js/nav.js"></script>
+    <!--Footer ends-->
+    <script src="/assets/js/nav.js"></script>
+    <script src="./assets/js/script-index.js"></script>
+    <script src="./assets/js/club.js"></script>
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/count.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+  
+    <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+  </script>
 </body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
-    <script src="../assets/js/events.js"></script> 
-    <script src="../assets/js/nav.js"></script> 
 </html>
-<!--hi-->

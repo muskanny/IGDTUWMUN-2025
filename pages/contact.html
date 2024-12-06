@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us - IGDTUWMUN 25'</title>
+  <title>Contact Us</title>
   
   <link rel="icon" type="image/x-icon" href="../assets/images/logo/logo.jpeg">
   <link rel="stylesheet" href="../assets/css/contact.css">
@@ -87,26 +87,27 @@
       <h2 class="common-heading">GET IN TOUCH</h2>
       <p class="common-paragraph">
         Have any questions, suggestions, or inquiries? Reach out to us, and we’ll ensure to assist you at the earliest.<br>
-        Your feedback and participation mean the world to us!
+        Your feedback and participation mean the world to us! For website related feedback/queries contact the <a href="https://www.linkedin.com/in/muskan-singh-83828b239/">developer here.</a> 
+      
       </p>
     </div>
     
   <!-- Reach Us Section -->
-  <div class="contact-details" style="text-align: center; margin-top: 20px;">
+  <!-- <div class="contact-details" style="text-align: center; margin-top: 20px;">
     <h3 class="common-heading">Reach us through</h3>
-    <div class="cards-container">
+    <div class="cards-container"> -->
       <!-- Card 1 -->
-      <div class="card">
+      <!-- <div class="card">
         <img src="person1.jpg" alt="Person 1" class="card-image">
         <div class="card-text">
           <p class="card-name" style="color: rgb(230, 207, 203);"><strong>Archita</strong></p>
           <p class="card-designation" style="color:#fff0d1;;">General Secretary IGDTUW MUN</p>
           <p class="card-contact" style="color:#fff0d1">+91 97174 38922</p>
         </div>
-      </div>
+      </div> -->
   
       <!-- Card 2 -->
-      <div class="card">
+      <!-- <div class="card">
         <img src="person2.jpg" alt="Person 2" class="card-image">
         <div class="card-text">
           <p class="card-name" style="color: rgb(230, 207, 203);"><strong>Muskan Singh</strong></p>
@@ -115,7 +116,7 @@
         </div>
       </div>
     </div>
-  </div>
+  </div> -->
 
   <!-- Contact Section -->
 <!-- <div class="contact-container" style="display: flex; width:100%; height: 500px; background-color: #f28d6573; padding: 20px; margin: 0 auto; border-radius: 12px;"> -->
@@ -128,10 +129,10 @@
     <!-- Right Section: Contact Form -->
     <div class="contact-right" style="flex:2; color:white;margin-left:100px;margin-right: 100px; padding:20px; display:flex; flex-direction:column; justify-content:center;">
       <p class="form-intro" style="color:aliceblue; font-size:18px; margin-bottom:15px;">We would love to hear from you!</p>
-      <input type="text" placeholder="Your Name" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px;">
-      <input type="email" placeholder="Your Email" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px;">
-      <textarea placeholder="Your Message" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px; height:100px;"></textarea>
-      <button type="submit" style="width:100%; padding:10px; background-color:#795757; color:white; font-size:16px; border:none; cursor:pointer;">
+      <input id="name" type="text" placeholder="Your Name" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px;">
+      <input id="email" type="email" placeholder="Your Email" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px;">
+      <textarea id="message" placeholder="Your Message" style="width:100%; margin-bottom:15px; padding:10px; font-size:16px; height:100px;"></textarea>
+      <button id="sendButton" style="width:100%; padding:10px; background-color:#795757; color:white; font-size:16px; border:none; cursor:pointer;">
         Send Message
       </button>
     </div>
@@ -176,6 +177,30 @@
               $('.nav').removeClass('affix');
           }
       });
-  </script>
+      document.getElementById('sendButton').addEventListener('click', () => {
+        const name = document.getElementById('name').value.trim();
+        const email = document.getElementById('email').value.trim();
+        const message = document.getElementById('message').value.trim();
+
+        // Construct subject and body
+        const subject = `IGDTUW MUN Query from ${name}`;
+        const body = `${message}`;
+
+        // Check if user is on a mobile device
+        const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+
+        if (isMobile) {
+          // Use mailto: for mobile devices
+          const mailtoURL = `mailto:srishti.chugh23@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          window.location.href = mailtoURL; // Redirect to default email client
+        } else {
+          // Use Gmail Compose URL for desktops
+          const gmailComposeURL = `https://mail.google.com/mail/?view=cm&fs=1&to=srishti.chugh23@gmail.com&su=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+          window.open(gmailComposeURL, '_blank'); // Open Gmail compose in a new tab
+        }
+      });
+
+
+    </script>
 </body>
 </html>

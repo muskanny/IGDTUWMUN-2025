@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="/assets/css/index.css" />
     <link rel="stylesheet" href="/assets/css/nav_footer.css">  
     <!--footer icon link-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet"/>
+   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
@@ -20,7 +23,7 @@
     <nav class="nav">
         <div class="container sidebarMenu">
             <div class="logo">
-                <img class="logopic" src="/assets/images/logo/logo_mun.png">
+                <img class="logopic" src="/assets/images\logo\logo_mun.png">
                 <a href="#">IGDTUWMUN'25</a>
             </div>
             <div id="mainListDiv" class="main_list">
@@ -31,19 +34,19 @@
                     <li><a href="/pages/contact.html">Contact us</a></li>
                 </ul>
             </div>
-            <button class="btn" onclick="toggleMenu()">
-              <span class="navTrigger">
+            <!-- <button class="btn" onclick="toggleMenu()"> -->
+              <span class="navTrigger" onclick="toggleMenu()">
                   <i></i>
                   <i></i>
                   <i></i>
               </span>
-            </button>
+            <!-- </button> -->
             <section id="menuSection" class="hidden">
               <ul class="menuList">
-                  <li>Home</li>
-                  <li>About</li>
-                  <li>Services</li>
-                  <li>Contact</li>
+                <li><a href="/index.html">Home</a></li>
+                <li><a href="/pages/register.html">Register Here</a></li>
+                <li><a href="/pages/committees.html">Committees</a></li>
+                <li><a href="/pages/contact.html">Contact us</a></li>
               </ul>
           </section>
       </nav>
@@ -54,17 +57,39 @@
 
     <header class="banner">
         <div class="bannerinner">
-            <h1>AIPPM</h1>
+            <h1>UNSC</h1>
         </div>
     </header>
-        <section class="agenda">
-        <h2>The Agenda</h2>
-        <p>Allegations of Central agency abuse under the current central government
-        </p></section>
+    <div class="agendabox">
+    <section class="agenda">
+        <p>The United Nations Security Council (UNSC) plays a crucial role in maintaining international peace and security. 
+            Its responsibilities encompass addressing emerging conflicts, proposing peaceful resolutions, regulating arms, and recommending 
+            sanctions or military intervention to prevent aggression. In addition, the UNSC has the authority to admit new members, oversee
+             governance in strategic regions, deploy peacekeeping forces, impose sanctions, sever diplomatic relations, and, when necessary,
+              take collective military action to safeguard global stability.
+        </p>
+        <br>
+        <br>
+        <br> 
+        <p>The agenda of the  United Nations Security Council (UNSC) is <b>Addressing the militarization of the Arctic by examining ongoing
+             deployments, evaluating security impacts, and considering geopolitical and environmental implications.</b>
+        <br>
+        <br>
+        <p>
+        <b> About the agenda - </b> The militarization of the Arctic threatens global security and stability, driven by competing territorial
+         claims and strategic interests. Increased military deployments in this fragile region exacerbate geopolitical tensions and pose 
+         significant risks to its delicate ecosystem. Addressing these concerns requires a focus on international collaboration to mitigate 
+         security threats while preserving the Arctic's unique environment for future generations.  
 
+        </p>
+    </section>
+    </div>
     <section class="executive-board">
         <h2>Executive Board</h2>
-        <div class="board-members">
+        <div class="comingsoon">
+            To be announced soon!
+        </div>
+        <!-- <div class="board-members">
             <div class="member-card">
                 <img src="https://via.placeholder.com/150" alt="Board Member">
                 <h3>Blake Lively</h3>
@@ -80,25 +105,45 @@
                 <h3>Hellooo</h3>
                 <p>Position</p>
             </div>
-        </div>
+        </div> -->
     </section>
-
+      </main>
 <!--Footer section -->
-<footer class="footer">
-    <div class="footer-left">
-        <img src="../assets/images/logo/logo_white.png" alt="AI Club Logo" class="club-logo">
-        <div class="club-info">
-            <h3>AI CLUB</h3>
-            <p>Inspiring Innovation in the field of AI</p>
+<footer>
+    <div class="footer_container">
+      <div class="logo"> <p>IGDTUWMUN'25</p></div>
+        <div class="social_media">
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+          <a href="#"><i class="fab fa-linkedin-in"></i></a>
         </div>
-    </div>
-    </div>
+        <p>Aarohan - The Literary Fest</p>
+      </div>
   </footer>
   <!--Footer ends-->
+  <script src="../assets/js/nav.js"></script>
+    <!--Footer ends-->
+    <script src="/assets/js/nav.js"></script>
+    <script src="./assets/js/script-index.js"></script>
+    <script src="./assets/js/club.js"></script>
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/count.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <!-- Function used to shrink nav bar removing paddings and adding black background -->
+  
+    <script>
+      $(window).scroll(function() {
+          if ($(document).scrollTop() > 50) {
+              $('.nav').addClass('affix');
+              console.log("OK");
+          } else {
+              $('.nav').removeClass('affix');
+          }
+      });
+  </script>
 </body>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> 
-    <script src="../assets/js/events.js"></script> 
-    <script src="../assets/js/nav.js"></script> 
 </html>
-<!--hi-->
+

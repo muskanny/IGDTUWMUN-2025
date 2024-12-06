@@ -37,7 +37,7 @@ body {
 }
 
 .nav div.logo a:hover {
-    color: gold;
+    color: rgb(151, 42, 2);
 }
 
 .nav div.main_list {
@@ -69,7 +69,7 @@ body {
 }
 
 .nav div.main_list ul li a:hover {
-    color: gold;
+    color: rgb(140, 38, 4);
 }
 
 
@@ -329,6 +329,7 @@ body {
 
 .affix {
     padding: 0;
+    /* background-color: #fc9963; */
     background-color: #aa7f68c1;
     color: white;
 }
@@ -365,7 +366,7 @@ body{
 }
 
 footer{
-  background: #452121ae;
+  background: #aa7f68c1;
   padding: 20px 0;
 }
 
@@ -391,7 +392,7 @@ footer{
 }
 
 .social_media a{
-  color: white;
+  color: #111;
   font-size: 24px;
   text-decoration: none;
   transition: .6s;
@@ -448,6 +449,14 @@ h1{
   font-size: 18px;
   border-bottom: 1px solid gray;
 }
+
+#menuSection ul li a {
+    padding: 0rem 0;
+    color: rgb(28, 22, 22);
+    font-size: 18px;
+    /* border-bottom: 1px solid gray; */
+    text-decoration: none;
+  }
 
 /* Show menu when visible */
 #menuSection.visible {
