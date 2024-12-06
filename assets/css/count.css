@@ -36,3 +36,49 @@
 .countdown-banner h2{
   margin: 1rem;
 }
+
+/* Media queries */
+@media (max-width: 845px) {
+  .countdown-banner .countdown-timer {
+    font-size: 2rem; 
+  }
+
+  .countdown-banner span {
+    margin: 0.5rem;
+    padding: 0.8rem;
+    min-width: 3.5rem; 
+    min-height: 1.5rem;
+  }
+
+  .countdown-banner h2 {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 595px) {
+  .countdown-banner .countdown-timer {
+    font-size: 1.54rem; 
+  }
+
+  .countdown-banner span {
+    margin: 0.3rem;
+    padding: 0.6rem;
+    min-width: 3rem; 
+    min-height: 1rem;
+  }
+
+  .countdown-banner h2 {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+  }
+}
+@media (max-width: 465px) {
+  .countdown-banner .countdown-timer {
+    font-size: 1rem; 
+  }
+
+  .countdown-banner span {
+    max-height: 1rem; 
+  }
+}
