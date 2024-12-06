@@ -4,7 +4,7 @@
   font-weight: 500;
 }
 .committee-page{
-  background-color: #d7e9ed;
+  background-color: #ffffff;
   /* background-color: #dcceb1; */
   /* background-color: #fff0d1; storing colours*/
 }
@@ -31,7 +31,7 @@
 }
 .bannerinner {
   display: inline-block; 
-  border: 6px solid #ffffff; 
+  border: 6px solid #c8e1e9; 
   padding: 30px 60px; 
   text-align: center;
 }
@@ -46,6 +46,7 @@
 
 .committee-container {
   display: grid;
+  
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   max-width: 90vw;
@@ -56,16 +57,17 @@
 .card {
   border-radius: 2px;
   width: 25vw;
+  background-color: #020335;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s;
   box-shadow: 0 2px 2px #233030; 
-  color: #000B58;
+  color: #e9ebf8;
 }
 
 .card:hover {
   box-shadow: 0 4px 4px #233030; 
-  border: #2d1506;
+  border: #060c2d;
 }
 
 .card-image {
@@ -92,7 +94,7 @@
 
 .card-subline {
   /* font-family: "Quicksand", sans-serif; */
-  color: #262020;
+  color: #ffffff;
   padding-top: 1rem;
   font-size: 1.8rem;
   line-height: 1.5rem;
@@ -107,7 +109,7 @@
 
 .committee-link button {
   border-radius: 30px;
-  background-color: #341806;
+  background-color: #060e34;
   border: none;
   margin: auto;
   margin-top: 1.7rem;

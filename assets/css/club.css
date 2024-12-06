@@ -7,7 +7,7 @@
     /* background-image: url(/assets/images/bg/newestBgLight.png); */
     object-fit:cover ;
     /* background-color: #a57b7b; */
-    background-color: #e2cfaa;
+    background-color: #fdfdfc;
     }
     
 .testimonial-section {   
@@ -25,20 +25,20 @@
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
     /* background-color: #7e4b4b; */
-    background-color: #aa7f68c1;
+    background-color: #688caac1;
     /* background-image: url(images/newestBgLight.png); */
 }
 
 .testimonial-title {
     font-size: 32px;
     /* color: #333; */
-    color: #2d1506;
+    color: #0e062d;
     margin-bottom: 8px;
 }
 
 .testimonial-subtitle {
     font-size: 16px;
-    color: #2d1506;
+    color: #12062d;
     margin-bottom: 32px;
 }
 
@@ -64,13 +64,13 @@
     position: relative;
     padding-left: 20px;
     /* border-left: 3px solid #6440af; */
-    border-left: 3px solid #2d1506;
+    border-left: 3px solid #14062d;
     max-width: 60%;
 }
 
 .quote-mark {
     font-size: 40px;
-    color: #2d1506;
+    color: #15062d;
     position: absolute;
     top: -10px;
     left: -25px;
@@ -79,7 +79,7 @@
 .testimonial-quote p {
     font-size: 16px;
     /* color: #7489bd; */
-    color: #2d1506;
+    color: #12062d;
     /* color: #c32c89; */
     line-height: 1.6;
     margin: 0;
@@ -88,19 +88,19 @@
 .testimonial-author h3 {
     font-size: 18px;
     /* color: #c8abab; */
-    color: #2d1506;
+    color: #0c062d;
     margin: 16px 0 4px;
 }
 
 .testimonial-author p {
     font-size: 14px;
     /* color: #f8f8fa; */
-    color: #2d1506;
+    color: #0c062d;
     margin: 0;
 }
 
 .testimonial-stars span {
-    color: #2d1506;
+    color: #0a062d;
     font-size: 20px;
 }
 
@@ -119,14 +119,14 @@
 .pagination-dot {
     width: 10px;
     height: 10px;
-    background-color: #2d1506;
+    background-color: #0a062d;
     border-radius: 50%;
     margin: 0 5px;
     cursor: pointer;
 }
 
 .pagination-dot.active {
-    background-color: #984410;
+    background-color: #4f4491;
 }
 
 @keyframes fadeIn {
@@ -156,7 +156,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
-    color: #2d1506;
+    color: #0c062d;
     cursor: pointer;
     font-size: 1.5rem;
 
