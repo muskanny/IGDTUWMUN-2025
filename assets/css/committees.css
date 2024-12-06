@@ -205,7 +205,7 @@
   font-weight: 400;
   font-size: 2.2rem;
   line-height: 2.6rem;
-  color: #2e1212;  
+  color: #060e34;  
 }
 
 .executive-board {
@@ -219,7 +219,7 @@
   font-size: 3.8rem;
   font-weight: 500;
   margin-bottom: 20px;
-  color: #333;
+  color: #134B70;
 }
 
 .board-members {
@@ -268,6 +268,7 @@
   width: 19ch;
   border-right: 2px solid black; /* Cursor effect */
   animation: typing 4s steps(21, end);
+  color:#7a7a7a;
 }
 
 @keyframes typing {

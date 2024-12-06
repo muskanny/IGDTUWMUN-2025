@@ -6,7 +6,7 @@ body{
 body {
   /* background: linear-gradient(135deg, #0F2027, #203A43, #2C5364);  */
   background-image: url(/assets/images/bg/newestBgLight.png);
-  background: #fff0d1;
+  background: #ffffff;
   background-position: center;
   /* padding: 2rem 0; */
   background-repeat: no-repeat;
@@ -20,7 +20,7 @@ body {
 }
 
 .contact-container {
-  background-color: rgb(237, 176, 153); 
+  background-color: #94b0c9; 
   /* background-color: #2d1506; */
   padding: 150px;
   border-radius: 8px;
@@ -54,7 +54,7 @@ body {
 .contact-details p {
   margin: 4px 0;
   font-size: 2em;
-  color: #420303; 
+  color: #14062d; 
 }
 
 .contact-form input,
@@ -100,7 +100,7 @@ body {
 }
 
 .common-paragraph {
-  color: #876969; 
+  color: #0c0533; 
   font-size: 20px; 
   line-height: 1.5; 
   font-family: Arial, sans-serif; 
@@ -109,7 +109,7 @@ body {
 }
 
 .common-heading {
-  color: #7b5e5e; 
+  color: #0c0533; 
   font-size: 32px; 
   line-height: 1.4; 
   font-family: Arial, sans-serif; 
@@ -132,7 +132,7 @@ body {
   padding: 20px; 
   border: 1px solid #ccc; 
   border-radius: 10px; 
-  background-color: #7e4b4b; 
+  background-color: #94b0c9; 
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
 }
 
