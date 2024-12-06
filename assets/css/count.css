@@ -1,6 +1,6 @@
 .countdown-banner {
   /* background-color: #3a1121; */
-  background-color: #2d1506;
+  background-color: #09062d;
   color: #fff;
   text-align: center;
   padding: 10px;
@@ -20,7 +20,7 @@
   margin: 1rem 1rem;
   padding: 1rem;
   /* background-color: #5e2b359f; */
-  background-color: #391b08;
+  background-color: #77a3bd;
   border-radius: 1rem;
   min-width: 6rem;
   min-height: 2rem;
@@ -30,7 +30,7 @@
 .countdown-banner span#hours,
 .countdown-banner span#minutes,
 .countdown-banner span#seconds {
-  color: #e0d8b5; 
+  color: #f8f7f3; 
 }
 
 .countdown-banner h2{

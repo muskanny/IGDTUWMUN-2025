@@ -4,24 +4,24 @@
   font-weight: 500;
 }
 .committee-page{
-  background-color: #ecdab6;
+  background-color: #ffffff;
   /* background-color: #dcceb1; */
   /* background-color: #fff0d1; storing colours*/
 }
 .committee-page a{
   text-decoration: none;
-  color: #1f1f1f;
+  /* color: #1f1f1f; */
 }
 
 .banner {
   /* background-image: url('https://via.placeholder.com/1920x600');    */
-  background: #2d1506;
+  background: #201E43;
   /* padding: 2rem; */
   /* background-image: url('/assets/images/banner.jpg');  */
   /* background: linear-gradient(beige, brown); */
   background-size: cover;
   background-position: center;
-  color: #341806;
+  color: #000B58;
   text-align: center;
   padding: 50px 20px;
   margin-bottom: 2rem;
@@ -31,7 +31,7 @@
 }
 .bannerinner {
   display: inline-block; 
-  border: 6px solid #ffffff; 
+  border: 6px solid #c8e1e9; 
   padding: 30px 60px; 
   text-align: center;
 }
@@ -46,6 +46,7 @@
 
 .committee-container {
   display: grid;
+  
   grid-template-columns: repeat(3, 1fr);
   gap: 3rem;
   max-width: 90vw;
@@ -56,19 +57,22 @@
 .card {
   border-radius: 2px;
   width: 25vw;
+  background-color: #020335;
   overflow: hidden;
   cursor: pointer;
   transition: transform 0.2s;
-  box-shadow: 0 4px 4px rgba(48, 7, 7, 0.263); 
+  box-shadow: 0 2px 2px #233030; 
+  color: #e9ebf8;
 }
 
 .card:hover {
-  box-shadow: 0 4px 4px rgba(48, 7, 7, 0.663); 
-  border: #2d1506;
+  box-shadow: 0 4px 4px #233030; 
+  border: #060c2d;
 }
 
 .card-image {
   width: 100%;
+  background-image: url('https://via.placeholder.com/200');
   height: fit-content;
   padding-top: 100%; 
   background-size: cover;
@@ -90,7 +94,7 @@
 
 .card-subline {
   /* font-family: "Quicksand", sans-serif; */
-  color: #262020;
+  color: #ffffff;
   padding-top: 1rem;
   font-size: 1.8rem;
   line-height: 1.5rem;
@@ -105,7 +109,7 @@
 
 .committee-link button {
   border-radius: 30px;
-  background-color: #341806;
+  background-color: #060e34;
   border: none;
   margin: auto;
   margin-top: 1.7rem;
@@ -179,7 +183,7 @@
 
 .agendabox{
   /* border-radius: 8px; */
-  background-color: #aa7f68c1;
+  background-color: #afc9c6;
   max-width: 80vw;
   margin: auto;
   margin-top: 3rem;
@@ -201,7 +205,7 @@
   font-weight: 400;
   font-size: 2.2rem;
   line-height: 2.6rem;
-  color: #2e1212;  
+  color: #060e34;  
 }
 
 .executive-board {
@@ -215,7 +219,7 @@
   font-size: 3.8rem;
   font-weight: 500;
   margin-bottom: 20px;
-  color: #333;
+  color: #134B70;
 }
 
 .board-members {
@@ -264,6 +268,7 @@
   width: 19ch;
   border-right: 2px solid black; /* Cursor effect */
   animation: typing 4s steps(21, end);
+  color:#7a7a7a;
 }
 
 @keyframes typing {

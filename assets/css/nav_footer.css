@@ -29,15 +29,25 @@ body {
     display: flex;
 
 }
+.nav a {
+    color: rgb(0, 0, 0); 
+    transition: color 0.3s ease; 
+}
+
+.nav.affix a {
+    color: #EEEEEE; 
+    transition: color 0.3s ease; 
+}
+
 
 .nav div.logo a {
     text-decoration: none;
-    color: black;
+    /* color: black; */
     font-size: 2.5rem;
 }
 
 .nav div.logo a:hover {
-    color: rgb(151, 42, 2);
+    color: #201E43;
 }
 
 .nav div.main_list {
@@ -63,13 +73,13 @@ body {
 
 .nav div.main_list ul li a {
     text-decoration: none;
-    color: black;
+    /* color: black; */
     line-height: 65px;
     font-size: 2.4rem;
 }
 
 .nav div.main_list ul li a:hover {
-    color: rgb(140, 38, 4);
+    color: #201E43;
 }
 
 
@@ -330,8 +340,8 @@ body {
 .affix {
     padding: 0;
     /* background-color: #fc9963; */
-    background-color: #aa7f68c1;
-    color: white;
+    background-color: #1d6a9e70;
+    color: rgb(255, 255, 255);
 }
 
 .myH2 {
@@ -366,8 +376,9 @@ body{
 }
 
 footer{
-  background: #aa7f68c1;
+  background: #134B70;
   padding: 20px 0;
+  color: white;
 }
 
 .footer_container{
@@ -392,14 +403,14 @@ footer{
 }
 
 .social_media a{
-  color: #111;
+  color: #ffffff;
   font-size: 24px;
   text-decoration: none;
   transition: .6s;
 }
 
 .social_media a:hover{
-  color: gold;
+  color: #508C9B;
 }
 h1{
   font-size: 40px;
@@ -430,7 +441,7 @@ h1{
 /* New Section Styles */
 #menuSection {
   display: none;
-  background-color: #d4caa0;
+  background-color: #ffffff;
   padding: 0.1rem;
   text-align: center;
   transition: max-height 0.3s ease-in-out; /* Smooth toggle effect */
@@ -445,14 +456,14 @@ h1{
 
 #menuSection ul li {
   padding: 0rem 0;
-  color: white;
+  color: rgb(200, 227, 252);
   font-size: 18px;
   border-bottom: 1px solid gray;
 }
 
 #menuSection ul li a {
     padding: 0rem 0;
-    color: rgb(28, 22, 22);
+    color: rgb(22, 22, 28);
     font-size: 18px;
     /* border-bottom: 1px solid gray; */
     text-decoration: none;

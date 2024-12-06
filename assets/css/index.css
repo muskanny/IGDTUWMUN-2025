@@ -1,11 +1,11 @@
 :root {
   --light-blue: #94b0c9;
   --dark-blue: #1c1678;
-  --black-color: #795757;
-  --white-color: #e2cfaa; /* Change the primary background color */
+  --black-color: #0c0533;
+  --white-color: #ffffff;
   --off-white-color: #f2f2f2;
   --off-blue-color: #daeaf9;
-  --dark-shade: #2d1506;
+  --dark-shade: #14062d;
   /* fff0d1 */
 }
 
@@ -25,7 +25,7 @@ body {
   padding-top: 5rem;
   padding-bottom: 5rem;
   border: none;
-  background-color: #ecdab6; /* Updated background color for about us section */
+  background-color: #ffffff; /* Updated background color for about us section */
   text-align: center;
   color: var(--black-color);
   font-size: large
