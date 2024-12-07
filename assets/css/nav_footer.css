@@ -134,7 +134,7 @@ body {
     }
     .nav div.main_list ul li {
         width: 100%;
-        text-align: right;
+        text-align: left;
     }
     .nav div.main_list ul li a {
         text-align: center;
