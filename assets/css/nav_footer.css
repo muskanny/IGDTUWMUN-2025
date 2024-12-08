@@ -128,7 +128,7 @@ body {
         right: 0;
         left: 0;
         bottom: 0;
-        background-color: #111;
+        background-color: #111111;
         /*same background color of navbar*/
         background-position: center top;
     }
@@ -376,9 +376,9 @@ body{
 }
 
 footer{
-  background: #134B70;
+  background: #d3dbf3c2;
   padding: 20px 0;
-  color: white;
+  color: rgb(0, 0, 0);
 }
 
 .footer_container{
@@ -403,7 +403,7 @@ footer{
 }
 
 .social_media a{
-  color: #ffffff;
+  color: #070707;
   font-size: 24px;
   text-decoration: none;
   transition: .6s;
@@ -414,7 +414,7 @@ footer{
 }
 h1{
   font-size: 40px;
-  color: #fff;
+  color: #000000;
   font-weight: bold;
 }
 

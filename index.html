@@ -249,7 +249,55 @@
   </section>
 </div>
 <!-- Faculty section ends -->
-
+<section class="carousel-section">
+  <div class="carousel-heading">
+    <div class="text">
+      <h2 class="sub-heading">Glimpse of <span>Past Events</span></h2>
+    </div>
+    <a href="">
+      <button class="arrow-button"></button>
+    </a>
+  </div>
+  <div class="carousel">
+    <div class="carousel-item">
+      <div
+        class="slide-image"
+        style="background-image: url('assets/aws photo/01.JPG')"
+      ></div>
+    </div>
+    <div class="carousel-item">
+      <div
+        class="slide-image"
+        style="background-image: url('assets/aws photo/02.JPG')"
+      ></div>
+    </div>
+    <div class="carousel-item">
+      <div
+        class="slide-image"
+        style="background-image: url('assets/aws photo/03.JPG')"
+      ></div>
+    </div>
+    <div class="carousel-item">
+      <div
+        class="slide-image"
+        style="background-image: url('assets/aws photo/04.JPG')"
+      ></div>
+    </div>
+    <div class="carousel-item">
+      <div
+        class="slide-image"
+        style="background-image: url('assets/aws photo/05.JPG')"
+      ></div>
+    </div>
+    <div class="carousel-item">
+      <div
+        class="slide-image"
+        style="background-image: url('assets/aws photo/06.JPG')"
+      ></div>
+    </div>
+   
+  </div>
+</section>
 
 
 <footer>
@@ -271,6 +319,33 @@
     <script src="js/scripts.js"></script>
 
 <!-- Function used to shrink nav bar removing paddings and adding black background -->
+// Carousel JS
+<script>
+  window.onload = function () {
+    let slides = document.getElementsByClassName("carousel-item");
+    function addActive(slide) {
+      slide.classList.add("active");
+    }
+    function removeActive(slide) {
+      slide.classList.remove("active");
+    }
+    addActive(slides[0]);
+    setInterval(function () {
+      for (let i = 0; i < slides.length; i++) {
+        if (i + 1 == slides.length) {
+          addActive(slides[0]);
+          setTimeout(removeActive, 350, slides[i]);
+          break;
+        }
+        if (slides[i].classList.contains("active")) {
+          setTimeout(removeActive, 350, slides[i]);
+          addActive(slides[i + 1]);
+          break;
+        }
+      }
+    }, 2000);
+  };
+</script>
     <script>
         $(window).scroll(function() {
             if ($(document).scrollTop() > 50) {
